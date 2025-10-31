@@ -8,7 +8,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <Building2 className="h-8 w-8" data-testid="logo-icon" />
             <span className="font-serif text-xl font-semibold" data-testid="text-brand">
-              LYTE ADVISORY
+              LYTE FINANCIAL
             </span>
           </div>
           
