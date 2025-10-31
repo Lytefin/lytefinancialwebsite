@@ -29,13 +29,13 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
           className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
           data-testid="text-hero-title"
         >
-          Case Study: Fuelling Growth with a 100% Financed $8.2M Premises
+          Case Study: From Senior Manager to Business Owner
         </h1>
         <p 
           className="text-lg md:text-xl leading-relaxed max-w-4xl"
           data-testid="text-hero-subtitle"
         >
-          We believe smart financing is about more than just securing a loan; it's about creating a platform for your business to grow. This case study demonstrates how we helped a client preserve vital capital while securing their ideal commercial property.
+          Transitioning from a salaried employee to a business owner is one of the biggest financial steps a person can take. This case study shows how we helped a client leverage their experience, not just their assets, to acquire their first business.
         </p>
       </div>
     </section>
