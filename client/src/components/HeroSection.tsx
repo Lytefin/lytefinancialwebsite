@@ -29,7 +29,7 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
           className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight"
           data-testid="text-hero-title"
         >
-          From purchasing a business to securing an owner-occupied commercial premises, Lyte has the expertise to deliver.
+          From purchasing your first business to acquiring your next, Lyte has the expertise to deliver.
         </h1>
         
         <Button 
