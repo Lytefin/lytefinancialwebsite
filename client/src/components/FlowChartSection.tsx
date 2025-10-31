@@ -10,7 +10,7 @@ const stages = [
   {
     number: 2,
     title: "Review of Premises or Business to be Purchased",
-    description: "We dive deeper into the new business or property being acquired — reviewing financials, EBIT multiples, and considering multiple structural options for your purchase."
+    description: "We dive deeper into the new business being acquired — reviewing financials, EBIT multiples, and considering multiple structural options for your purchase."
   },
   {
     number: 3,
