@@ -10,7 +10,7 @@ const highlights = [
     description: "This is where the team at Lyte review your entire position to provide you with the most creative strategies in the market."
   },
   {
-    title: "Every Option at Your Fingertips",
+    title: "to have Every Option at Your Fingertips",
     description: "Lyte utilises every lender from the 'Big 4' down to family offices to ensure you have all options at your fingertips."
   }
 ];
