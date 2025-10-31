@@ -1,0 +1,67 @@
+🧭 Web Page Generation Brief
+
+Title: SME Business Lending Flow Chart
+Subtitle: From purchasing a business to securing an owner-occupied commercial premises — Lyte has the expertise to deliver.
+Branding:
+
+Color scheme: Navy blue, soft beige/cream, white (as per Lyte Advisory’s palette)
+
+Typography: Modern serif for headings, clean sans-serif for body text
+
+Style: Corporate, trustworthy, and minimalistic with subtle financial professionalism
+
+💼 Page Structure
+1. Hero Section
+
+Headline: SME Business Lending Flow Chart
+
+Subheadline: From purchasing a business to securing an owner-occupied commercial premises, Lyte has the expertise to deliver.
+
+Background: Navy blue gradient overlay with a subtle office or finance-related image
+
+Optional CTA Button: “Start Your Funding Journey” → scrolls to flow chart section
+
+2. Flow Chart Section
+
+A vertical or horizontal flow chart visually representing the 5 Stages of Lyte’s SME Lending Process, using connected boxes with soft rounded corners, beige backgrounds, and navy text. Arrows or connectors should be clean and minimal.
+
+Stage 1: Discovery
+
+Description:
+We discuss your current scenario, assessing your existing business performance for lending purposes or reviewing your PAYG experience to support a new business purchase application.
+
+Stage 2: Review of Premises or Business to be Purchased
+
+Description:
+We dive deeper into the new business or property being acquired — reviewing financials, EBIT multiples, and considering multiple structural options for your purchase.
+
+Stage 3: Preparation of Your Commercial Credit Proposal
+
+Description:
+A detailed, comprehensive credit proposal is crafted, analyzing every aspect of your scenario and business to ensure the strongest possible lending application.
+
+Stage 4: Managing the Lending Process
+
+Description:
+We liaise with the chosen lender to manage and streamline the process through to settlement, ensuring an efficient, stress-free experience.
+
+Stage 5: Ongoing Advice
+
+Description:
+We build on our initial discussions and medium-term planning to make sure your business and lending structures position you for long-term success.
+
+3. Call-to-Action Section
+
+Heading: Ready to Take the Next Step?
+
+Subheading: Let’s discuss how Lyte can support your business growth through tailored finance solutions.
+
+Button: Book a Consultation (styled in beige over navy)
+
+4. Optional Enhancements
+
+Add animated icons for each stage (e.g., magnifying glass for discovery, document icon for proposal, handshake for settlement).
+
+Include subtle fade-in transitions as the user scrolls through each stage.
+
+Keep spacing generous and visual hierarchy clear for readability.
