@@ -26,13 +26,6 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-primary/50" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        <h1 
-          className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-          data-testid="text-hero-title"
-        >
-          SME Business Lending Flow Chart
-        </h1>
-        
         <p 
           className="text-lg md:text-xl mb-8 text-white/95 max-w-3xl mx-auto leading-relaxed"
           data-testid="text-hero-subtitle"
