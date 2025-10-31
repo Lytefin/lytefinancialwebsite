@@ -1,4 +1,5 @@
 import StageCard from "./StageCard";
+import { ArrowDown, ArrowRight } from "lucide-react";
 
 const stages = [
   {
@@ -37,7 +38,7 @@ export default function FlowChartSection() {
             className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
             data-testid="text-flowchart-title"
           >
-            Our 5 Stage Business Lending Process
+            Our 5-Stage Lending Process
           </h2>
           <p 
             className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto"
@@ -47,14 +48,27 @@ export default function FlowChartSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
-          {stages.map((stage) => (
-            <StageCard
-              key={stage.number}
-              stageNumber={stage.number}
-              title={stage.title}
-              description={stage.description}
-            />
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 relative">
+          {stages.map((stage, index) => (
+            <div key={stage.number} className="relative">
+              <StageCard
+                stageNumber={stage.number}
+                title={stage.title}
+                description={stage.description}
+              />
+              
+              {index < stages.length - 1 && (
+                <>
+                  <div className="hidden lg:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
+                    <ArrowRight className="h-8 w-8 text-primary" />
+                  </div>
+                  
+                  <div className="flex lg:hidden justify-center my-4">
+                    <ArrowDown className="h-8 w-8 text-primary" />
+                  </div>
+                </>
+              )}
+            </div>
           ))}
         </div>
       </div>
