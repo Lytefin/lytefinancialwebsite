@@ -7,7 +7,7 @@ interface StageCardProps {
 export default function StageCard({ stageNumber, title, description }: StageCardProps) {
   return (
     <div 
-      className="bg-primary text-primary-foreground rounded-xl p-6 md:p-8 relative overflow-visible h-full flex flex-col min-h-[200px]"
+      className="bg-primary text-primary-foreground rounded-xl p-6 md:p-8 relative overflow-visible flex flex-col h-[240px]"
       data-testid={`card-stage-${stageNumber}`}
     >
       <div className="absolute top-4 left-6 text-6xl md:text-7xl font-serif font-bold opacity-10 select-none pointer-events-none">
