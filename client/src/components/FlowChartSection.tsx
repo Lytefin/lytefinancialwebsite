@@ -38,7 +38,7 @@ export default function FlowChartSection() {
             className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
             data-testid="text-flowchart-title"
           >
-            Our 5 Stage Business Lending Process
+            SME Business Lending Flow Chart - SME Business Lending Process
           </h2>
           <p 
             className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto"
