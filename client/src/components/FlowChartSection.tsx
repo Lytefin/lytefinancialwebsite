@@ -37,7 +37,7 @@ export default function FlowChartSection() {
             className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
             data-testid="text-flowchart-title"
           >
-            Our 5-Stage Lending Process
+            Our 5 Stage Business Lending Process
           </h2>
           <p 
             className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto"
@@ -59,7 +59,7 @@ export default function FlowChartSection() {
             ))}
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {stages.slice(3, 5).map((stage) => (
               <StageCard
                 key={stage.number}
