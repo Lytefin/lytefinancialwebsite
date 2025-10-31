@@ -1,31 +1,17 @@
-import StageCard from "./StageCard";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
-const stages = [
+const highlights = [
   {
-    number: 1,
-    title: "Discovery",
-    description: "We discuss your current scenario, assessing your existing business performance for lending purposes or reviewing your PAYG experience to support a new business purchase application."
+    title: "Commercial Lending isn't difficult",
+    description: "Did you know lenders can be more generous with commercial lending than residential offering up to 90-100% of the purchase price for Owner Occupied businesses?"
   },
   {
-    number: 2,
-    title: "Review of Premises or Business to be Purchased",
-    description: "We dive deeper into the new business being acquired — reviewing financials, EBIT multiples, and considering multiple structural options for your purchase."
+    title: "All you need is a Plan",
+    description: "This is where the team at Lyte review your entire position to provide you with the most creative strategies in the market."
   },
   {
-    number: 3,
-    title: "Preparation of Your Commercial Credit Proposal",
-    description: "A detailed, comprehensive credit proposal is crafted, analyzing every aspect of your scenario and business to ensure the strongest possible lending application."
-  },
-  {
-    number: 4,
-    title: "Managing the Lending Process",
-    description: "We liaise with the chosen lender to manage and streamline the process through to settlement, ensuring an efficient, stress-free experience."
-  },
-  {
-    number: 5,
-    title: "Ongoing Advice",
-    description: "We build on our initial discussions and medium-term planning to make sure your business and lending structures position you for long-term success."
+    title: "Every Option at Your Fingertips",
+    description: "Lyte utilises every lender from the 'Big 4' down to family offices to ensure you have all options at your fingertips."
   }
 ];
 
@@ -48,58 +34,27 @@ export default function FlowChartSection() {
           </p>
         </div>
 
-        <div className="space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative">
-            {stages.slice(0, 3).map((stage, index) => (
-              <div key={stage.number} className="relative">
-                <StageCard
-                  stageNumber={stage.number}
-                  title={stage.title}
-                  description={stage.description}
-                />
-                
-                {index < 2 && (
-                  <>
-                    <div className="hidden md:flex absolute top-1/2 -right-3 lg:-right-4 transform -translate-y-1/2 z-20">
-                      <ArrowRight className="h-8 w-8 text-primary" />
-                    </div>
-                    
-                    <div className="flex md:hidden justify-center my-4">
-                      <ArrowDown className="h-8 w-8 text-primary" />
-                    </div>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex justify-center">
-            <ArrowDown className="h-8 w-8 text-primary" />
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto relative">
-            {stages.slice(3, 5).map((stage, index) => (
-              <div key={stage.number} className="relative">
-                <StageCard
-                  stageNumber={stage.number}
-                  title={stage.title}
-                  description={stage.description}
-                />
-                
-                {index === 0 && (
-                  <>
-                    <div className="hidden md:flex absolute top-1/2 -right-3 lg:-right-4 transform -translate-y-1/2 z-20">
-                      <ArrowRight className="h-8 w-8 text-primary" />
-                    </div>
-                    
-                    <div className="flex md:hidden justify-center my-4">
-                      <ArrowDown className="h-8 w-8 text-primary" />
-                    </div>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {highlights.map((highlight, index) => (
+            <Card 
+              key={index}
+              className="p-8 hover-elevate"
+              data-testid={`card-highlight-${index + 1}`}
+            >
+              <h3 
+                className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4"
+                data-testid={`text-highlight-title-${index + 1}`}
+              >
+                {highlight.title}
+              </h3>
+              <p 
+                className="text-muted-foreground text-base md:text-lg leading-relaxed"
+                data-testid={`text-highlight-description-${index + 1}`}
+              >
+                {highlight.description}
+              </p>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
