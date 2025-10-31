@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 const highlights = [
   {
     title: "Commercial Lending isn't difficult",
-    description: "Did you know lenders can be more generous with commercial lending than residential offering up to 90-100% of the purchase price for Owner Occupied businesses?"
+    description: "Did you know lenders can be more generous with commercial lending than residential offering up to 90-100% of the purchase price for new commercial property purchases?"
   },
   {
     title: "All you need is a Plan",
