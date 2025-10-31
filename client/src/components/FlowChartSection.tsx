@@ -26,12 +26,6 @@ export default function FlowChartSection() {
           >
             Bespoke Lending Strategies for your new commercial acquisition
           </h2>
-          <p 
-            className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto"
-            data-testid="text-flowchart-subtitle"
-          >
-            A comprehensive, step-by-step approach to securing your business funding
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
