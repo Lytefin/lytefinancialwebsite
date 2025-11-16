@@ -3,7 +3,7 @@ import { Building2 } from "lucide-react";
 export default function Header() {
   return (
     <header className="bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="w-full px-6 md:px-12">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-3 hover-elevate active-elevate-2 px-3 py-2 rounded-md -ml-3">
             <Building2 className="h-8 w-8" data-testid="logo-icon" />
