@@ -22,20 +22,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-primary/50" />
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
-          <p 
-            className="text-base md:text-lg font-medium mb-4 tracking-wide opacity-95"
-            data-testid="text-hero-tagline"
-          >
-            Bringing Clarity to Complexity
-          </p>
           <h1 
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             data-testid="text-hero-title"
           >
-            Expert Business & Commercial Finance Solutions
+            Bringing Clarity to Complexity
           </h1>
           <p 
-            className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8"
+            className="text-lg md:text-xl font-medium mb-8 tracking-wide opacity-95"
+            data-testid="text-hero-tagline"
+          >
+            Expert Business & Commercial Finance Solutions
+          </p>
+          <p 
+            className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-8"
             data-testid="text-hero-subtitle"
           >
             From purchasing your first business to acquiring your next, Lyte Financial has the expertise to deliver tailored lending solutions for your success.
