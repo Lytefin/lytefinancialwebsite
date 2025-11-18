@@ -43,7 +43,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h2 
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4"
               data-testid="text-services-title"
             >
               OUR REAL TIME CLIENT SOLUTIONS
