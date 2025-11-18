@@ -33,7 +33,7 @@ export default function Home() {
               className="text-lg md:text-xl font-medium tracking-wide opacity-95"
               data-testid="text-hero-tagline"
             >
-              Our advisors provide bespoke finance strategies for every situation.
+              Our advisors illuminate bespoke finance strategies for every situation.
             </p>
           </div>
         </div>
