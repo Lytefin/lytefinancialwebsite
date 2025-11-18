@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-primary/50" />
         
         <div className="relative z-10 w-full px-6 md:px-12 pt-16 md:pt-24">
-          <div className="max-w-2xl text-white">
+          <div className="max-w-2xl text-primary-foreground">
             <h1 
               className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
               data-testid="text-hero-title"
@@ -30,7 +30,7 @@ export default function Home() {
               Simplifying the Complex
             </h1>
             <p 
-              className="text-lg md:text-xl font-medium tracking-wide opacity-95"
+              className="text-lg md:text-xl font-medium tracking-wide"
               data-testid="text-hero-tagline"
             >
               Our advisors illuminate bespoke finance strategies for every situation.
