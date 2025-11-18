@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-accent">
+      <section className="pt-10 pb-16 md:pt-14 md:pb-24 bg-accent">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h2 
