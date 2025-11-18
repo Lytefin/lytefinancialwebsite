@@ -8,9 +8,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-24">
           <a href="/" className="flex items-center gap-3 hover-elevate active-elevate-2 px-3 py-2 rounded-md -ml-3">
             <Building2 className="h-10 w-10" data-testid="logo-icon" />
-            <span className="font-serif text-2xl font-semibold" data-testid="text-brand">
-              LYTE FINANCIAL
-            </span>
+            <div className="flex flex-col leading-none" data-testid="text-brand">
+              <span className="font-serif text-3xl font-bold tracking-wide">
+                LYTE
+              </span>
+              <span className="font-serif text-xs font-normal tracking-widest -mt-1">
+                FINANCIAL
+              </span>
+            </div>
           </a>
           
           <nav className="hidden lg:flex items-center gap-10">
