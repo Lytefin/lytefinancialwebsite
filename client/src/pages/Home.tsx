@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
-import { Building2, Users, TrendingUp, FileText } from "lucide-react";
+import { Building2, Users, TrendingUp, FileText, Home as HomeIcon } from "lucide-react";
 import heroImage from "@assets/generated_images/Isometric_business_technology_illustration_63b34037.png";
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <Card 
               className="p-8 bg-primary hover-elevate active-elevate-2 cursor-pointer" 
               onClick={() => setLocation('/business-acquisition')}
@@ -72,6 +72,20 @@ export default function Home() {
             <Card className="p-8 bg-primary hover-elevate" data-testid="card-service-2">
               <div className="flex justify-center mb-6">
                 <div className="h-16 w-16 rounded-full bg-primary-foreground/20 flex items-center justify-center">
+                  <HomeIcon className="h-8 w-8 text-primary-foreground" />
+                </div>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-primary-foreground mb-4 text-center">
+                Residential Lending
+              </h3>
+              <p className="text-primary-foreground text-base leading-relaxed text-center">
+                Tailored home loan solutions for owner-occupied and investment properties with competitive rates.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-primary hover-elevate" data-testid="card-service-3">
+              <div className="flex justify-center mb-6">
+                <div className="h-16 w-16 rounded-full bg-primary-foreground/20 flex items-center justify-center">
                   <Users className="h-8 w-8 text-primary-foreground" />
                 </div>
               </div>
@@ -83,7 +97,7 @@ export default function Home() {
               </p>
             </Card>
 
-            <Card className="p-8 bg-primary hover-elevate" data-testid="card-service-3">
+            <Card className="p-8 bg-primary hover-elevate" data-testid="card-service-4">
               <div className="flex justify-center mb-6">
                 <div className="h-16 w-16 rounded-full bg-primary-foreground/20 flex items-center justify-center">
                   <TrendingUp className="h-8 w-8 text-primary-foreground" />
