@@ -26,13 +26,13 @@ export default function Home() {
             className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             data-testid="text-hero-title"
           >
-            Bringing Clarity to Complexity
+            Simplifying the Complex
           </h1>
           <p 
-            className="text-lg md:text-xl font-medium mb-8 tracking-wide opacity-95"
+            className="text-lg md:text-xl font-medium mb-8 tracking-wide opacity-95 max-w-4xl mx-auto"
             data-testid="text-hero-tagline"
           >
-            Expert Business & Commercial Finance Solutions
+            Our advisors provide bespoke strategies for your individual situation.
           </p>
           <p 
             className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-8"
