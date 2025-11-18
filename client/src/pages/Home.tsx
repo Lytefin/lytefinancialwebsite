@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
 import { Building2, Users, TrendingUp, FileText } from "lucide-react";
-import heroImage from "@assets/generated_images/Boardroom_financial_presentation_meeting_fb721c7c.png";
+import heroImage from "@assets/generated_images/Isometric_business_technology_illustration_63b34037.png";
 
 export default function Home() {
   const [, setLocation] = useLocation();
