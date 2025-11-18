@@ -46,7 +46,7 @@ export default function Home() {
               className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
               data-testid="text-services-title"
             >
-              OUR REAL TIME SOLUTIONS
+              OUR BREAL TIME CLIENT SOLUTIONS
             </h2>
           </div>
 
