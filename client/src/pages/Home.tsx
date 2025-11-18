@@ -33,7 +33,7 @@ export default function Home() {
               className="text-lg md:text-xl font-medium tracking-wide"
               data-testid="text-hero-tagline"
             >
-              Our advisors illuminate bespoke finance strategies for every situation.
+              Our advisors illuminate your next best move.
             </p>
           </div>
         </div>
