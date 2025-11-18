@@ -8,11 +8,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-24">
           <a href="/" className="flex items-center gap-3 hover-elevate active-elevate-2 px-3 py-2 rounded-md -ml-3">
             <Building2 className="h-10 w-10" data-testid="logo-icon" />
-            <div className="flex flex-col leading-none" data-testid="text-brand">
-              <span className="font-serif text-3xl font-bold tracking-wide">
+            <div className="flex flex-col leading-none items-start" data-testid="text-brand">
+              <span className="font-serif text-5xl font-bold tracking-tight">
                 LYTE
               </span>
-              <span className="font-serif text-xs font-normal tracking-widest -mt-1">
+              <span className="font-serif text-[0.5rem] font-normal tracking-[0.45em] -mt-1.5 uppercase">
                 FINANCIAL
               </span>
             </div>
