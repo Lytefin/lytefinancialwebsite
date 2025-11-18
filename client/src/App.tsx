@@ -9,6 +9,7 @@ import Scenarios from "@/pages/Scenarios";
 import SMSFScenario from "@/pages/SMSFScenario";
 import CommercialScenario from "@/pages/CommercialScenario";
 import BusinessScenario from "@/pages/BusinessScenario";
+import BusinessAcquisition from "@/pages/BusinessAcquisition";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
+      <Route path="/business-acquisition" component={BusinessAcquisition} />
       <Route path="/scenarios" component={Scenarios} />
       <Route path="/scenarios/smsf" component={SMSFScenario} />
       <Route path="/scenarios/commercial" component={CommercialScenario} />

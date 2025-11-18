@@ -57,7 +57,11 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <Card className="p-8 hover-elevate" data-testid="card-service-1">
+            <Card 
+              className="p-8 hover-elevate active-elevate-2 cursor-pointer" 
+              onClick={() => setLocation('/business-acquisition')}
+              data-testid="card-service-1"
+            >
               <div className="flex justify-center mb-6">
                 <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
                   <Building2 className="h-8 w-8 text-primary" />
