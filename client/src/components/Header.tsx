@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import logoImage from "@assets/image_1763876522255.png";
-import wingsImage from "@assets/wings_1763900223766.jpg";
+import wingsImage from "@assets/wings_1763900437707.jpg";
 
 export default function Header() {
   return (
