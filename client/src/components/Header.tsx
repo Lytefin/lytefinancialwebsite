@@ -92,6 +92,13 @@ export default function Header() {
               Meet our Team
             </a>
             <a 
+              href="/calculator" 
+              className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
+              data-testid="link-calculator"
+            >
+              Tools and Calculators
+            </a>
+            <a 
               href="#booking" 
               className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
               data-testid="link-booking"
