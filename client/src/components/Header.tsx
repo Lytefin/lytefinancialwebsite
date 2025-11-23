@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/image_1763872383768.png";
+import logoImage from "@assets/image_1763875111843.png";
 
 export default function Header() {
   return (
