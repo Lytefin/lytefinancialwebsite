@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/image_1763863965234.png";
+import logoImage from "@assets/Liyte master logo_1763864423908.jpg";
 
 export default function Header() {
   return (
