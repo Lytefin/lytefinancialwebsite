@@ -2,10 +2,9 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
-import { Building2, Users, TrendingUp, Home as HomeIcon, Star, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Building2, Users, TrendingUp, Home as HomeIcon, Star } from "lucide-react";
 import heroImage from "@assets/image_1763875547582.png";
-import mapImage from "@assets/image_1763878897395.png";
-import logoImage from "@assets/image_1763876522255.png";
+import footerBanner from "@assets/lANDING BANNER_1763878964789.png";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import cbaLogo from '@assets/stock_images/commonwealth_bank_of_cd95a3e1.jpg';
@@ -290,92 +289,13 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative" data-testid="footer">
-        <div className="h-48 md:h-64 overflow-hidden">
-          <img 
-            src={mapImage}
-            alt="Map showing Lyte Financial location"
-            className="w-full h-full object-cover"
-            data-testid="img-map"
-          />
-        </div>
-
-        <div className="bg-primary text-primary-foreground">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-              <div>
-                <img 
-                  src={logoImage}
-                  alt="Lyte Financial"
-                  className="h-16 mb-6"
-                  data-testid="footer-logo"
-                />
-              </div>
-
-              <div>
-                <div className="flex items-start gap-3 mb-4">
-                  <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold mb-1">3/26/848 Sussex St</p>
-                    <p>Sydney, NSW 2000</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 mb-2">
-                  <Phone className="h-5 w-5 flex-shrink-0" />
-                  <a href="tel:0290993613" className="hover:underline">0290 993 613</a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 flex-shrink-0" />
-                  <a href="mailto:admin@lytefinancial.com.au" className="hover:underline">admin@lytefinancial.com.au</a>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="mb-1"><span className="font-semibold">Mon - Fri:</span> 8:00 AM - 5:00 PM</p>
-                    <p className="mb-1"><span className="font-semibold">Sat:</span> 8:00 AM - 8:00 PM</p>
-                    <p><span className="font-semibold">Sun:</span> Closed</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-3">
-                <Button 
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                  data-testid="button-discover-story"
-                >
-                  Discover Our Story
-                </Button>
-                <Button 
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                  onClick={() => setLocation('/contact')}
-                  data-testid="button-schedule-meeting"
-                >
-                  Schedule a Meeting
-                </Button>
-              </div>
-            </div>
-
-            <div className="border-t border-primary-foreground/20 pt-6">
-              <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-                <a href="/" className="hover:underline">Home</a>
-                <a href="/team" className="hover:underline">About Us</a>
-                <a href="/business-purchase" className="hover:underline">Business & SME Lending</a>
-                <a href="/commercial-property" className="hover:underline">Commercial Lending</a>
-                <a href="/residential-lending" className="hover:underline">Residential Lending</a>
-                <a href="/smsf-lending" className="hover:underline">Self-Managed Super Fund (SMSF) Lending</a>
-                <a href="#" className="hover:underline">Financial Strategy</a>
-                <a href="/calculator" className="hover:underline">Tools & Calculator</a>
-                <a href="#booking" className="hover:underline">Book a Meeting</a>
-                <a href="/contact" className="hover:underline">Contact Us</a>
-              </nav>
-            </div>
-          </div>
-        </div>
+      <footer className="w-full" data-testid="footer">
+        <img 
+          src={footerBanner}
+          alt="Lyte Financial - Contact Information and Location"
+          className="w-full h-auto"
+          data-testid="img-footer-banner"
+        />
       </footer>
     </div>
   );
