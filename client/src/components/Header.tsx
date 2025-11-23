@@ -7,21 +7,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import logoImage from "@assets/image_1763876522255.png";
-import wingsImage from "@assets/wings_1763900700802.jpg";
+import logoImage from "@assets/final logo_1763934965157.jpg";
 
 export default function Header() {
   return (
     <header className="bg-primary text-primary-foreground">
       <div className="w-full px-6 md:px-12">
         <div className="flex items-center justify-between h-32">
-          <a href="/" className="flex items-center gap-1 hover-elevate active-elevate-2 px-3 py-2 rounded-md">
-            <img 
-              src={wingsImage} 
-              alt="Wings" 
-              className="h-[72px] -mt-4"
-              data-testid="img-wings"
-            />
+          <a href="/" className="hover-elevate active-elevate-2 px-3 py-2 rounded-md">
             <img 
               src={logoImage} 
               alt="Lyte Financial" 
