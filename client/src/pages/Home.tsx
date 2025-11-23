@@ -33,7 +33,7 @@ export default function Home() {
               className="text-xl md:text-2xl font-medium tracking-wide"
               data-testid="text-hero-tagline"
             >
-              Our advisors illuminate your next best move.
+              identifying your next best move
             </p>
           </div>
         </div>
