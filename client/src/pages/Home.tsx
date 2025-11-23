@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-serif text-2xl font-bold text-primary-foreground mb-4 text-center">
-                SMSF Property
+                SMSF Residential and Commercial Lending
               </h3>
               <p className="text-primary-foreground text-base leading-relaxed text-center">
                 Navigate complex SMSF structures to leverage your superannuation for property investment.
