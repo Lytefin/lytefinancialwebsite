@@ -1,9 +1,16 @@
 import { Card } from "@/components/ui/card";
-import { Building2, Users, Briefcase } from "lucide-react";
+import { Building2, Users, Briefcase, Home } from "lucide-react";
 import { useLocation } from "wouter";
 import Header from "@/components/Header";
 
 const scenarios = [
+  {
+    icon: Home,
+    title: "Residential Lending Scenario",
+    description: "See how we helped a couple purchase their new home while holding their existing property through bridging finance.",
+    path: "/scenarios/residential",
+    testId: "card-residential-scenario"
+  },
   {
     icon: Users,
     title: "SMSF Scenario",
@@ -51,7 +58,7 @@ export default function Scenarios() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {scenarios.map((scenario) => {
               const Icon = scenario.icon;
               return (

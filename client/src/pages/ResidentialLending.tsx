@@ -30,7 +30,7 @@ export default function ResidentialLending() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             <Card 
               className="p-10 bg-primary hover-elevate active-elevate-2 cursor-pointer" 
-              onClick={() => setLocation('/scenarios')}
+              onClick={() => setLocation('/scenarios/residential')}
               data-testid="card-example"
             >
               <div className="flex justify-center mb-6">

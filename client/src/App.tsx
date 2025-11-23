@@ -11,6 +11,7 @@ import Scenarios from "@/pages/Scenarios";
 import SMSFScenario from "@/pages/SMSFScenario";
 import CommercialScenario from "@/pages/CommercialScenario";
 import BusinessScenario from "@/pages/BusinessScenario";
+import ResidentialScenario from "@/pages/ResidentialScenario";
 import BusinessPurchase from "@/pages/BusinessPurchase";
 import BusinessProcess from "@/pages/BusinessProcess";
 import ResidentialLending from "@/pages/ResidentialLending";
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/scenarios/smsf" component={SMSFScenario} />
       <Route path="/scenarios/commercial" component={CommercialScenario} />
       <Route path="/scenarios/business" component={BusinessScenario} />
+      <Route path="/scenarios/residential" component={ResidentialScenario} />
       <Route component={NotFound} />
     </Switch>
   );
