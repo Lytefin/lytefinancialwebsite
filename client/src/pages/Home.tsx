@@ -33,7 +33,7 @@ export default function Home() {
               className="text-xl md:text-2xl font-medium tracking-wide"
               data-testid="text-hero-tagline"
             >
-              A funding solution for everything
+              A funding solution for everything.
             </p>
           </div>
         </div>
