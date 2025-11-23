@@ -20,6 +20,7 @@ export default function BusinessScenario() {
           <div className="max-w-4xl mx-auto text-primary-foreground">
             <h1 
               className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+              style={{ textShadow: 'none' }}
               data-testid="text-hero-title"
             >
               Case Study: From Senior Manager to Business Owner
