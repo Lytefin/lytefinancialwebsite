@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="relative h-[60vh] min-h-[425px] flex items-start justify-start overflow-hidden">
+      <section className="relative h-[40vh] min-h-[300px] flex items-start justify-start overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
