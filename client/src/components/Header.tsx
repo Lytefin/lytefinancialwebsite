@@ -24,7 +24,7 @@ export default function Header() {
               About
             </a>
             <a 
-              href="#team" 
+              href="/team" 
               className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
               data-testid="link-team"
             >

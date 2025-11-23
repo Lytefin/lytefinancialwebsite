@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
+import Team from "@/pages/Team";
 import Scenarios from "@/pages/Scenarios";
 import SMSFScenario from "@/pages/SMSFScenario";
 import CommercialScenario from "@/pages/CommercialScenario";
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
+      <Route path="/team" component={Team} />
       <Route path="/business-acquisition" component={BusinessAcquisition} />
       <Route path="/scenarios" component={Scenarios} />
       <Route path="/scenarios/smsf" component={SMSFScenario} />
