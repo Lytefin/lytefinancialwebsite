@@ -114,39 +114,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="flex justify-center mb-8">
-            <div className="bg-primary/10 p-6 rounded-full">
-              <FileText className="h-12 w-12 text-primary-foreground" />
-            </div>
-          </div>
-          
-          <h2 
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6"
-            data-testid="text-scenarios-title"
-          >
-            Real Success Stories
-          </h2>
-          
-          <p 
-            className="text-primary-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto"
-            data-testid="text-scenarios-description"
-          >
-            Discover how we've helped clients achieve their business and property goals through innovative financing solutions.
-          </p>
-          
-          <Button 
-            size="lg"
-            onClick={() => setLocation('/scenarios')}
-            className="font-medium text-base px-8"
-            data-testid="button-view-scenarios"
-          >
-            View Scenarios
-          </Button>
-        </div>
-      </section>
-
       <section className="py-20 md:py-28 bg-accent">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 
