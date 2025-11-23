@@ -2,11 +2,50 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
-import { Building2, Users, TrendingUp, FileText, Home as HomeIcon } from "lucide-react";
+import { Building2, Users, TrendingUp, Home as HomeIcon, Star } from "lucide-react";
 import heroImage from "@assets/image_1763875547582.png";
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+
+const reviews = [
+  {
+    id: 1,
+    author: "Sarah Mitchell",
+    text: "Tony and his team at Lyte Financial made purchasing my first investment property seamless. Their expertise in navigating complex lending scenarios is unmatched. Highly recommend!",
+    rating: 5,
+  },
+  {
+    id: 2,
+    author: "James Robertson",
+    text: "Exceptional service from start to finish. Jarred's deep understanding of SMSF lending helped us secure the perfect commercial property for our fund. Professional and efficient!",
+    rating: 5,
+  },
+  {
+    id: 3,
+    author: "Emily Chen",
+    text: "I was struggling to get business acquisition funding approved elsewhere. Lyte Financial found me a solution within days. Their industry knowledge and connections are impressive.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    author: "Michael Thompson",
+    text: "The mortgage calculator on their website gave me a great starting point, but the personalized service from Tony exceeded all expectations. Got me a fantastic rate!",
+    rating: 5,
+  },
+  {
+    id: 5,
+    author: "Lisa Patterson",
+    text: "From residential to commercial property lending, Lyte Financial handled everything with professionalism. They simplified what seemed like an impossible process. Thank you!",
+    rating: 5,
+  },
+];
 
 export default function Home() {
   const [, setLocation] = useLocation();
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: 'start' },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -110,6 +149,59 @@ export default function Home() {
                 SMSF Residential and Commercial Lending
               </h3>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-primary" data-testid="section-reviews">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4"
+              data-testid="text-reviews-title"
+            >
+              What Our Clients Say
+            </h2>
+            <div className="flex justify-center gap-1 mb-2">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star 
+                  key={star} 
+                  className="h-6 w-6 fill-primary-foreground text-primary-foreground" 
+                />
+              ))}
+            </div>
+            <p className="text-primary-foreground text-lg">
+              5-Star Google Reviews
+            </p>
+          </div>
+
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-6">
+              {reviews.map((review) => (
+                <div
+                  key={review.id}
+                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+                  data-testid={`review-card-${review.id}`}
+                >
+                  <Card className="p-6 h-full bg-white">
+                    <div className="flex gap-1 mb-4">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Star 
+                          key={star} 
+                          className="h-5 w-5 fill-primary text-primary" 
+                        />
+                      ))}
+                    </div>
+                    <p className="text-primary text-base leading-relaxed mb-4">
+                      "{review.text}"
+                    </p>
+                    <p className="text-primary font-semibold">
+                      {review.author}
+                    </p>
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
