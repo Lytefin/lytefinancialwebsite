@@ -14,7 +14,7 @@ import westpacLogo from '@assets/stock_images/westpac_bank_logo_au_379b9359.jpg'
 import stGeorgeLogo from '@assets/stock_images/st_george_bank_logo__13ba4291.jpg';
 import judoLogo from '@assets/stock_images/judo_bank_logo_austr_67cb11e4.jpg';
 import ampLogo from '@assets/stock_images/amp_bank_logo_austra_5f491124.jpg';
-import boardroomImage from '@assets/stock_images/business_people_in_b_df76ccfb.jpg';
+import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 
 const reviews = [
   {
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="relative pt-10 pb-16 md:pt-14 md:pb-24 bg-accent overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: `url(${boardroomImage})` }}
+          style={{ backgroundImage: `url(${constructionImage})` }}
         />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
