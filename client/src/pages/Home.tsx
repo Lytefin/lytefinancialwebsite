@@ -112,7 +112,7 @@ export default function Home() {
 
       <section className="relative pt-10 pb-16 md:pt-14 md:pb-24 bg-accent overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-60"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${constructionImage})` }}
         />
         
