@@ -75,7 +75,7 @@ export default function Header() {
                             className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             data-testid="link-smsf-lending"
                           >
-                            <div className="text-sm font-semibold leading-none">SMSF Residential and Commercial Lending</div>
+                            <div className="text-sm font-semibold leading-none">SMSF Lending</div>
                           </a>
                         </NavigationMenuLink>
                       </li>

@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-serif text-2xl font-bold text-primary-foreground text-center">
-                SMSF Residential and Commercial Lending
+                SMSF Lending
               </h3>
             </Card>
           </div>

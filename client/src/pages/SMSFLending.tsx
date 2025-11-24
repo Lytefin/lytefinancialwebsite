@@ -17,7 +17,7 @@ export default function SMSFLending() {
               className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6"
               data-testid="text-title"
             >
-              SMSF Residential and Commercial Lending
+              SMSF Lending
             </h1>
             <p 
               className="text-primary-foreground text-lg md:text-xl max-w-3xl mx-auto"
