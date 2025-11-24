@@ -45,7 +45,7 @@ export default function SMSFScenario() {
               </div>
             </div>
             
-            <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <div className="space-y-4 text-primary text-base md:text-lg leading-relaxed">
               <p data-testid="text-goal-description-1">
                 Two business partners, who run a highly successful company, identified an ideal commercial property to purchase and operate their business from.
               </p>
@@ -75,29 +75,29 @@ export default function SMSFScenario() {
               </div>
             </div>
             
-            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <div className="space-y-6 text-primary text-base md:text-lg leading-relaxed">
               <p data-testid="text-solution-intro">
                 Our expertise was in guiding the clients on the right structure before the finance was even discussed. We collaborated closely with their accountant to develop a solution.
               </p>
               
-              <p className="font-semibold text-primary-foreground" data-testid="text-solution-answer">
+              <p className="font-semibold text-primary" data-testid="text-solution-answer">
                 The answer was a Unit Trust. This is how we implemented it:
               </p>
               
               <ul className="space-y-4 pl-6">
                 <li className="flex gap-3" data-testid="text-solution-step-1">
                   <span className="text-primary font-bold flex-shrink-0">•</span>
-                  <span><strong className="text-primary-foreground">Establishment of a Unit Trust:</strong> A new Unit Trust was established specifically for the purpose of holding the asset.</span>
+                  <span><strong className="text-primary">Establishment of a Unit Trust:</strong> A new Unit Trust was established specifically for the purpose of holding the asset.</span>
                 </li>
                 
                 <li className="flex gap-3" data-testid="text-solution-step-2">
                   <span className="text-primary font-bold flex-shrink-0">•</span>
-                  <span><strong className="text-primary-foreground">SMSF Investment:</strong> The two business partners' individual SMSFs each invested in the trust, acquiring an equal share of the units.</span>
+                  <span><strong className="text-primary">SMSF Investment:</strong> The two business partners' individual SMSFs each invested in the trust, acquiring an equal share of the units.</span>
                 </li>
                 
                 <li className="flex gap-3" data-testid="text-solution-step-3">
                   <span className="text-primary font-bold flex-shrink-0">•</span>
-                  <span><strong className="text-primary-foreground">The Purchase:</strong> This Unit Trust (now funded by the two SMSFs) became the legal purchasing entity that acquired the new commercial property.</span>
+                  <span><strong className="text-primary">The Purchase:</strong> This Unit Trust (now funded by the two SMSFs) became the legal purchasing entity that acquired the new commercial property.</span>
                 </li>
               </ul>
               
