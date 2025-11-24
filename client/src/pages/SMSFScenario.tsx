@@ -16,6 +16,22 @@ export default function SMSFScenario() {
         
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/60" />
         
+        <div className="relative z-10 w-full px-6 md:px-12 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white"
+              data-testid="text-hero-title"
+            >
+              Case Study: The Smart Structure for Business Partners & SMSF Property
+            </h1>
+            <p 
+              className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto text-white"
+              data-testid="text-hero-description"
+            >
+              Using your super to invest in property is a powerful wealth-building strategy, but it can be complex, especially for partners. This case study illustrates how we helped two business partners use their separate super funds to acquire their new business premises together.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="py-16 md:py-24 bg-accent">
