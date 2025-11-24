@@ -5,7 +5,7 @@ import { useLocation } from "wouter";
 import { Building2, Users, TrendingUp, Home as HomeIcon, Star, MapPin, Phone, Mail, Clock } from "lucide-react";
 import heroImage from "@assets/image_1763875547582.png";
 import mapImage from "@assets/image_1763878897395.png";
-import logoImage from "@assets/image_1763876522255.png";
+import logoImage from "@assets/image_1763957351356.png";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import cbaLogo from '@assets/stock_images/commonwealth_bank_of_cd95a3e1.jpg';
