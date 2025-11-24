@@ -17,16 +17,16 @@ export default function BusinessScenario() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/60" />
         
         <div className="relative z-10 w-full px-6 md:px-12 text-center">
-          <div className="max-w-4xl mx-auto text-primary-foreground">
+          <div className="max-w-4xl mx-auto">
             <h1 
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white"
               style={{ textShadow: 'none' }}
               data-testid="text-hero-title"
             >
               Case Study: From Senior Manager to Business Owner
             </h1>
             <p 
-              className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
+              className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto text-white"
               data-testid="text-hero-description"
             >
               Transitioning from a salaried employee to a business owner is one of the biggest financial steps a person can take. This case study shows how we helped a client leverage their experience, not just their assets, to acquire their first business.
