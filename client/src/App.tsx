@@ -9,6 +9,7 @@ import Team from "@/pages/Team";
 import MortgageCalculator from "@/pages/MortgageCalculator";
 import Scenarios from "@/pages/Scenarios";
 import SMSFScenario from "@/pages/SMSFScenario";
+import SMSFResidentialScenario from "@/pages/SMSFResidentialScenario";
 import CommercialScenario from "@/pages/CommercialScenario";
 import BusinessScenario from "@/pages/BusinessScenario";
 import ResidentialScenario from "@/pages/ResidentialScenario";
@@ -39,6 +40,7 @@ function Router() {
       <Route path="/smsf-process" component={SMSFProcess} />
       <Route path="/scenarios" component={Scenarios} />
       <Route path="/scenarios/smsf" component={SMSFScenario} />
+      <Route path="/scenarios/smsf-residential" component={SMSFResidentialScenario} />
       <Route path="/scenarios/commercial" component={CommercialScenario} />
       <Route path="/scenarios/business" component={BusinessScenario} />
       <Route path="/scenarios/residential" component={ResidentialScenario} />

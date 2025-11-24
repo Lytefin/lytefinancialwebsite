@@ -30,7 +30,7 @@ export default function SMSFLending() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             <Card 
               className="p-10 bg-primary hover-elevate active-elevate-2 cursor-pointer" 
-              onClick={() => setLocation('/scenarios')}
+              onClick={() => setLocation('/scenarios/smsf-residential')}
               data-testid="card-residential"
             >
               <div className="flex justify-center mb-6">
