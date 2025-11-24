@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { Target, Lightbulb } from "lucide-react";
-import heroImage from "@assets/SMSF COMMERCIAL 1_1763875933787.jpg";
+import heroImage from "@assets/SMSF COMMERCIAL 2_1763875938929.jpg";
 
 export default function SMSFScenario() {
   return (
