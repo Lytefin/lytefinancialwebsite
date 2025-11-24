@@ -20,7 +20,7 @@ export default function BusinessPurchase() {
               Business Purchases and Funding
             </h1>
             <p 
-              className="text-primary-foreground text-lg md:text-xl max-w-3xl mx-auto"
+              className="text-primary text-lg md:text-xl max-w-3xl mx-auto"
               data-testid="text-description"
             >
               Explore our real-world client examples and understand our comprehensive lending process
