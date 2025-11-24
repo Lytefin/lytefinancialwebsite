@@ -14,19 +14,19 @@ export default function ResidentialScenario() {
           data-testid="img-hero-background"
         />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/60" />
+        <div className="absolute inset-0 bg-primary" />
         
         <div className="relative z-10 w-full px-6 md:px-12 text-center">
-          <div className="max-w-4xl mx-auto text-primary-foreground">
+          <div className="max-w-4xl mx-auto">
             <h1 
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white"
               style={{ textShadow: 'none' }}
               data-testid="text-hero-title"
             >
               Purchasing a New Property While Holding Your Existing Home (Bridging Finance)
             </h1>
             <p 
-              className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
+              className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto text-white"
               data-testid="text-hero-description"
             >
               Real-world example of how we helped clients purchase their dream home without the stress of selling first
