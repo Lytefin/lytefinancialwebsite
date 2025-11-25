@@ -6,7 +6,7 @@ import heroImage from "@assets/image_1764036161490.png";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
-type CaseStudyType = "bridging" | "firsthome";
+type CaseStudyType = "bridging" | "firsthome" | "debtrecycling";
 
 export default function ResidentialScenario() {
   const [activeCase, setActiveCase] = useState<CaseStudyType>("bridging");
@@ -76,6 +76,17 @@ export default function ResidentialScenario() {
               data-testid="button-case-firsthome"
             >
               First Home Buyer: Navigating the Property Market with Confidence
+            </Button>
+            <Button
+              onClick={() => setActiveCase("debtrecycling")}
+              className={`text-base md:text-lg px-6 py-6 h-auto transition-all ${
+                activeCase === "debtrecycling"
+                  ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
+                  : "bg-card text-primary border-2 border-primary hover:bg-primary/10"
+              }`}
+              data-testid="button-case-debtrecycling"
+            >
+              Debt Recycling & Refinance to Build Wealth
             </Button>
           </div>
         </div>
@@ -531,6 +542,209 @@ export default function ResidentialScenario() {
                     </li>
                     <li data-testid="text-outcome-2-5">
                       <span className="font-semibold text-primary">A Confident Entry Into the Property Market:</span> The clients received clear direction, lender support, and full guidance through a process that otherwise would have felt overwhelming.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {activeCase === "debtrecycling" && (
+        <>
+          <section className="py-12 md:py-16 bg-accent">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Case Study 3
+                </span>
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-3">
+                  Debt Recycling & Refinance to Build Wealth
+                </h2>
+                <p className="text-muted-foreground text-lg italic max-w-3xl mx-auto">
+                  How we helped clients lower their home loan costs and turn personal savings into a tax-effective investment strategy.
+                </p>
+              </div>
+              
+              <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <Target className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-goal-title-3"
+                    >
+                      The Client's Goal & Challenge
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <div>
+                    <p className="font-semibold text-primary mb-2">Clients: Jason & Emily, Melbourne VIC</p>
+                    <p className="pl-6">
+                      <strong className="text-primary">Goal:</strong> Reduce non-deductible home loan interest and build long-term wealth through strategic investing.
+                    </p>
+                    <p className="pl-6 mt-3">
+                      Jason & Emily were financially stable and motivated to grow their wealth. They had accumulated a significant cash buffer and wanted to put their money to work—without increasing their overall financial risk.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-primary mb-2">The Challenge:</p>
+                    <p className="pl-6 mb-3">The couple held:</p>
+                    <ul className="pl-12 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>$250,000 in cash savings, sitting idle</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>A home loan with a higher-than-necessary interest rate</span>
+                      </li>
+                    </ul>
+                    <p className="pl-6 mt-4">
+                      Although they wanted to invest, doing so directly from their savings would leave them paying unnecessary non-deductible interest on their mortgage. They needed a structure that:
+                    </p>
+                    <ul className="pl-12 mt-3 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Reduced their home loan costs</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Freed up capital for investing</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Made future interest tax-deductible</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Stayed within their comfort level and long-term goals</span>
+                      </li>
+                    </ul>
+                    <p className="pl-6 mt-4 font-semibold text-primary">
+                      They required a strategic and compliant way to restructure their finances for maximum efficiency.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="relative py-16 md:py-24 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${constructionImage})` }}
+            />
+            <div className="absolute inset-0 bg-background/90" />
+            <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12">
+              <div className="bg-card/95 p-8 md:p-12 rounded-lg border border-border backdrop-blur-sm">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <Lightbulb className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-solution-title-3"
+                    >
+                      Our Strategic Solution
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-8 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <div data-testid="text-solution-3-step-1">
+                    <p className="font-semibold text-primary mb-3">1. Refinancing the Existing Home Loan to Reduce Costs</p>
+                    <p className="pl-6">
+                      We refinanced their home loan to a lender offering a lower interest rate, immediately reducing their monthly repayments and long-term interest costs.
+                    </p>
+                  </div>
+                  
+                  <div data-testid="text-solution-3-step-2">
+                    <p className="font-semibold text-primary mb-3">2. Using Their $250,000 to Eliminate Non-Deductible Debt</p>
+                    <p className="pl-6">
+                      We applied their $250,000 savings directly against the newly refinanced home loan. This significantly reduced their non-deductible debt—improving their financial position from day one.
+                    </p>
+                  </div>
+                  
+                  <div data-testid="text-solution-3-step-3">
+                    <p className="font-semibold text-primary mb-3">3. Establishing a New Investment Loan (Debt Recycling Structure)</p>
+                    <p className="pl-6 mb-3">
+                      To ensure their investment strategy remained tax-efficient, we set up a new $250,000 loan against their property for investment purposes. This allowed them to:
+                    </p>
+                    <ul className="pl-12 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Keep their home loan as low as possible</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Use separate loan splits for clarity and compliance</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Begin investing without affecting personal cash flow</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div data-testid="text-solution-3-step-4">
+                    <p className="font-semibold text-primary mb-3">4. Creating a Long-Term, Tax-Effective Investment Plan</p>
+                    <p className="pl-6 mb-3">
+                      The new loan was used to invest in diversified assets, including shares and managed funds. Because the borrowed funds were used for investing, the interest on the new loan became tax-deductible—transforming what once was "bad debt" into "good debt."
+                    </p>
+                    <p className="pl-6">
+                      We also created a clear roadmap for future debt recycling, allowing Jason & Emily to grow their investments as their home loan reduces over time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 md:py-24 bg-accent">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <TrendingUp className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-outcome-title-3"
+                    >
+                      The Positive Outcome
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <p className="font-medium text-primary" data-testid="text-outcome-intro-3">
+                    A smart, long-term wealth strategy with immediate financial benefits:
+                  </p>
+                  
+                  <ul className="space-y-4 pl-6">
+                    <li data-testid="text-outcome-3-1">
+                      <span className="font-semibold text-primary">Lower Interest on Their Home Loan:</span> Refinancing reduced their repayments and saved thousands in future interest.
+                    </li>
+                    <li data-testid="text-outcome-3-2">
+                      <span className="font-semibold text-primary">Converted $250,000 of Non-Deductible Debt Into Tax-Deductible Debt:</span> Their money now works harder—reducing tax and improving long-term returns.
+                    </li>
+                    <li data-testid="text-outcome-3-3">
+                      <span className="font-semibold text-primary">A Structured Investment Plan for Wealth Growth:</span> They now hold a well-designed investment portfolio funded through an efficient debt strategy.
+                    </li>
+                    <li data-testid="text-outcome-3-4">
+                      <span className="font-semibold text-primary">Improved Long-Term Cash Flow:</span> By reducing non-deductible interest, more of their money goes toward wealth creation.
+                    </li>
+                    <li data-testid="text-outcome-3-5">
+                      <span className="font-semibold text-primary">Clear, Sustainable Financial Framework:</span> The structure allows them to continue recycling debt and expanding their investment base over time.
                     </li>
                   </ul>
                 </div>
