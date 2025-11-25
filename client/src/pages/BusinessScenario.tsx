@@ -250,8 +250,13 @@ export default function BusinessScenario() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+      <section className="relative py-16 md:py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${constructionImage})` }}
+        />
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 text-center">
           <Button 
             onClick={() => setLocation('/#booking')}
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg md:text-xl px-8 py-6 h-auto"
