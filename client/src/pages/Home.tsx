@@ -174,7 +174,7 @@ export default function Home() {
 
             <Card 
               className="p-8 bg-primary hover-elevate active-elevate-2 cursor-pointer" 
-              onClick={() => setLocation('/scenarios/commercial')}
+              onClick={() => setLocation('/scenarios/smsf')}
               data-testid="card-service-4"
             >
               <div className="flex justify-center mb-6">
@@ -347,7 +347,7 @@ export default function Home() {
                 <a href="/scenarios/business" className="hover:underline">Business & SME Lending</a>
                 <a href="/scenarios/commercial" className="hover:underline">Commercial Lending</a>
                 <a href="/scenarios/residential" className="hover:underline">Residential Lending</a>
-                <a href="/scenarios/commercial" className="hover:underline">SMSF Lending</a>
+                <a href="/scenarios/smsf" className="hover:underline">SMSF Lending</a>
                 <a href="#" className="hover:underline">Financial Strategy</a>
                 <a href="/calculator" className="hover:underline">Tools & Calculator</a>
                 <a href="#booking" className="hover:underline">Book a Meeting</a>
