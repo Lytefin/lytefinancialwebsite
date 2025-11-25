@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { Target, Lightbulb, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Target, Lightbulb, MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@assets/image_1764037219843.png";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
@@ -118,6 +118,121 @@ export default function SMSFScenario() {
               <p className="pt-4" data-testid="text-solution-conclusion">
                 With this compliant and clear structure in place, we were able to facilitate the lending required for the Unit Trust to complete the transaction.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${constructionImage})` }}
+        />
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4"
+              data-testid="text-process-title"
+            >
+              Five-Stage Process Map
+            </h2>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
+              Our structured approach to SMSF property lending
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-1">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Assessment & Initial Documentation
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Determine the SMSF's borrowing capacity based on current assets, contributions, and anticipated rental income. Gather essential documents including the SMSF Trust Deed, financial statements, member statements, and trustee identification.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-2">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Strategy & Structuring
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Review available deposits and explore alternative equity options. Assess strategic on-lending opportunities from member funds. Engage accountants and solicitors to establish the correct Bare Trust structure and ensure SMSF Trust Deed permits borrowing.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-3">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Application Submission
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Select the optimal lender based on property type, loan-to-value ratio, and interest rate requirements. Compile the comprehensive loan application package including all financial, trust, and property documentation for formal submission.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-4">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  4
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Execution & Settlement
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Manage the application through to settlement, responding promptly to lender queries. Ensure all Bare Trust Deed and loan agreements comply with SIS legislation. Coordinate with client, solicitor, and lender for smooth settlement and loan drawdown.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-5">
+              <div className="flex items-start gap-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  5
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Post-Settlement & Growth Strategy
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Conduct post-settlement review to confirm all compliance requirements are met. Provide ongoing strategies for SMSF growth including loan structure reviews, contribution optimization, and property performance assessment.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
