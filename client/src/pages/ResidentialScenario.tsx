@@ -237,7 +237,7 @@ export default function ResidentialScenario() {
         <div className="absolute inset-0 bg-background/90" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 text-center">
           <Button 
-            onClick={() => setLocation('/#booking')}
+            onClick={() => window.open('https://calendly.com/tony-lytefinancial/30min?month=2025-11', '_blank')}
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg md:text-xl px-8 py-6 h-auto"
             data-testid="button-book-meeting"
           >
@@ -287,7 +287,7 @@ export default function ResidentialScenario() {
             
             <Button 
               variant="outline"
-              onClick={() => setLocation('/#booking')}
+              onClick={() => window.open('https://calendly.com/tony-lytefinancial/30min?month=2025-11', '_blank')}
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               data-testid="button-schedule-meeting"
             >
