@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { Target, Lightbulb } from "lucide-react";
+import { Target, Lightbulb, ArrowRight } from "lucide-react";
 import heroImage from "@assets/SME PURCH 1_1763876386191.jpg";
 
 export default function BusinessScenario() {
@@ -122,6 +122,116 @@ export default function BusinessScenario() {
                       <span className="font-semibold text-primary">- Business Assets:</span> We secured the final portion of the loan via a charge over the high-value vehicles and equipment within the engineering business itself.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-accent">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4"
+              data-testid="text-process-title"
+            >
+              Five-Stage Process Map
+            </h2>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
+              Our structured approach to business acquisition finance
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-1">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Initial Consultation & Opportunity Assessment
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Comprehensive discussion with the client to understand their background, experience, and the target business opportunity. Assessment of how their skills and experience align with the business they wish to acquire, and identification of potential funding sources.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-2">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Business Viability & Due Diligence
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Thorough assessment of the target business including financials, supply chains, customer contracts, key personnel, and operational structure. This analysis forms the foundation for demonstrating business viability to lenders and identifying security options.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-3">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Funding Structure Design
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Development of a multi-layered funding structure combining property equity, cash contributions, and charges over business assets. This step involves identifying the optimal mix of funding sources to meet the full acquisition price while managing risk for both client and lender.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-4">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  4
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Application & Experience Case Building
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Preparation of a compelling application that highlights the client's transferable skills and experience. Building a strong case demonstrating how senior management experience, budget oversight, and KPI accountability directly translate to business ownership capability.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-5">
+              <div className="flex items-start gap-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  5
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Approval, Settlement & Ownership Transition
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Management of the approval process through to settlement. Coordination with solicitors, accountants, and the vendor to ensure a smooth ownership transition. Establishing security charges over business assets and finalising all documentation for the client to take control of their new business.
+                  </p>
                 </div>
               </div>
             </div>
