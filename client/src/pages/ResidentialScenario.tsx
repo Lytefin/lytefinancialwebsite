@@ -54,7 +54,7 @@ export default function ResidentialScenario() {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => setActiveCase("bridging")}
               className={`text-base md:text-lg px-6 py-6 h-auto transition-all ${
