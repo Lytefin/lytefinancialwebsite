@@ -309,7 +309,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3 mb-2">
                   <Phone className="h-5 w-5 flex-shrink-0" />
-                  <a href="tel:0290993613" className="hover:underline">0290 993 613</a>
+                  <a href="tel:0290993613" className="hover:underline">02 9099 3613</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0" />
