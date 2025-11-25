@@ -1,9 +1,13 @@
 import Header from "@/components/Header";
 import { Target, Lightbulb, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 import heroImage from "@assets/generated_images/Engineering_workshop_manufacturing_facility_c59a6e79.png";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 
 export default function BusinessScenario() {
+  const [, setLocation] = useLocation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -242,6 +246,18 @@ export default function BusinessScenario() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+          <Button 
+            onClick={() => setLocation('/#booking')}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg md:text-xl px-8 py-6 h-auto"
+            data-testid="button-book-meeting"
+          >
+            Book Your Solutions Meeting Here
+          </Button>
         </div>
       </section>
     </div>
