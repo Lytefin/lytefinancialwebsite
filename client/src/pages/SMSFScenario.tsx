@@ -17,7 +17,7 @@ export default function SMSFScenario() {
           data-testid="img-hero-background"
         />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/60" />
+        <div className="absolute inset-0 bg-primary" />
         
         <div className="relative z-10 w-full px-6 md:px-12 text-center">
           <div className="max-w-4xl mx-auto">
