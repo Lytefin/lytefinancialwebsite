@@ -108,7 +108,7 @@ export default function Home() {
             </p>
             <Button 
               onClick={() => setLocation('/contact')}
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-6 h-auto"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
               data-testid="button-speak-expert"
             >
               Speak to a Leading Lending Expert Today
