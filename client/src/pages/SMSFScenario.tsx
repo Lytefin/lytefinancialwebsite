@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import { Target, Lightbulb, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/SMSF COMMERCIAL 1_1763875933787.jpg";
+import heroImage from "@assets/image_1764037219843.png";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
@@ -17,7 +17,7 @@ export default function SMSFScenario() {
           data-testid="img-hero-background"
         />
         
-        <div className="absolute inset-0 bg-primary" />
+        <div className="absolute inset-0 bg-primary/70" />
         
         <div className="relative z-10 w-full px-6 md:px-12 text-center">
           <div className="max-w-4xl mx-auto">
