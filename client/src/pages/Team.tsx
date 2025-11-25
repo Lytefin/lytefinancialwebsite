@@ -42,7 +42,7 @@ export default function Team() {
                   <p className="text-primary/80 font-medium">Founder / Director</p>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Tony founded Lyte Financial with a vision to deliver tailored lending solutions that go beyond standard banking. With extensive expertise across business acquisitions, commercial property, residential lending, and SMSF structures, Tony brings a strategic approach to every client engagement. His ability to navigate complex transactions and structure multi-layered finance solutions has helped countless clients achieve their business and property ownership goals.
+                  Tony founded Lyte Financial to deliver lending solutions beyond standard banking. His expertise spans business acquisitions, commercial property, residential lending, and SMSF structures. Tony's strategic approach and ability to structure complex, multi-layered finance solutions has helped countless clients achieve their ownership goals.
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Team() {
                   <p className="text-primary/80 font-medium">Operations Manager</p>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Jarred is the operational backbone of Lyte Financial, ensuring every client application moves smoothly from initial consultation through to settlement. With a keen eye for detail and exceptional organisational skills, he manages the critical documentation, lender communications, and compliance requirements that underpin successful lending outcomes. Jarred's commitment to client service excellence ensures a seamless experience at every stage.
+                  Jarred ensures every application moves smoothly from consultation to settlement. With exceptional attention to detail, he manages documentation, lender communications, and compliance requirements. His commitment to service excellence delivers a seamless client experience at every stage.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Team() {
                   <p className="text-primary/80 font-medium">Advisory Chairman</p>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Mathew brings over 25 years of senior leadership experience in banking and finance to his role as Advisory Chairman. Having held executive positions at major financial institutions, he provides invaluable strategic guidance and industry insight to Lyte Financial. Mathew's deep understanding of lending markets, regulatory frameworks, and institutional relationships strengthens the firm's capability to deliver sophisticated finance solutions for complex scenarios.
+                  Mathew brings over 25 years of senior leadership in banking and finance. Having held executive positions at major financial institutions, he provides strategic guidance and deep industry insight. His expertise in lending markets and institutional relationships strengthens Lyte Financial's sophisticated solutions.
                 </p>
               </div>
             </div>
