@@ -15,9 +15,9 @@ import stGeorgeLogo from '@assets/stock_images/st_george_bank_logo__13ba4291.jpg
 import judoLogo from '@assets/stock_images/judo_bank_logo_austr_67cb11e4.jpg';
 import ampLogo from '@assets/stock_images/amp_bank_logo_austra_5f491124.jpg';
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
-import lendingPanel1 from '@assets/LENDING PANEL 1_1763892845984.jpg';
-import lendingPanel2 from '@assets/LENDING PANEL 2_1763892852027.jpg';
-import lendingPanel3 from '@assets/LENDING PANEL 3_1763892857084.jpg';
+import lendingPanel1 from '@assets/LENDING PANEL 1_1764039226168.jpg';
+import lendingPanel2 from '@assets/LENDING PANEL 2_1764039230870.jpg';
+import lendingPanel3 from '@assets/LENDING PANEL 3_1764039235261.jpg';
 import lyteMap from '@assets/LYTE MAP_1763893148700.jpg';
 
 const reviews = [
