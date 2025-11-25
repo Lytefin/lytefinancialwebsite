@@ -287,7 +287,7 @@ export default function BusinessScenario() {
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-primary-foreground text-sm">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 flex-shrink-0" />
-                <span>526/368 Sussex Street, Sydney, NSW 2000</span>
+                <span>526/368 Sussex Street, Sydney, NSW, 2000</span>
               </div>
               
               <div className="flex flex-col items-center md:items-start gap-1">

@@ -304,7 +304,7 @@ export default function Home() {
                   <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold mb-1">526/368 Sussex Street</p>
-                    <p>Sydney, NSW 2000</p>
+                    <p>Sydney, NSW, 2000</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 mb-2">

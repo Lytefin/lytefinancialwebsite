@@ -78,8 +78,8 @@ export default function Contact() {
                   <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-primary font-semibold mb-1">Address:</p>
-                    <p className="text-foreground">526/368 Sussex St.</p>
-                    <p className="text-foreground">Sydney, NSW 2000</p>
+                    <p className="text-foreground">526/368 Sussex Street</p>
+                    <p className="text-foreground">Sydney, NSW, 2000</p>
                   </div>
                 </div>
 
