@@ -77,7 +77,7 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-primary font-semibold mb-1">Address</p>
+                    <p className="text-primary font-semibold mb-1">Address:</p>
                     <p className="text-foreground">526/368 Sussex St.</p>
                     <p className="text-foreground">Sydney, NSW 2000</p>
                   </div>
@@ -86,7 +86,7 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-primary font-semibold mb-1">Telephone</p>
+                    <p className="text-primary font-semibold mb-1">Telephone:</p>
                     <a 
                       href="tel:0290993613" 
                       className="text-foreground hover:text-primary transition-colors"
@@ -100,7 +100,7 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-primary font-semibold mb-1">Email</p>
+                    <p className="text-primary font-semibold mb-1">Email:</p>
                     <a 
                       href="mailto:admin@lytefinancial.com.au" 
                       className="text-foreground hover:text-primary transition-colors"
@@ -114,7 +114,7 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-primary font-semibold mb-1">Office Hours</p>
+                    <p className="text-primary font-semibold mb-1">Office Hours:</p>
                     <p className="text-foreground">
                       <span className="font-semibold">Mon - Fri:</span> 8:00 AM - 6:00 PM
                     </p>
