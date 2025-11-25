@@ -354,7 +354,7 @@ export default function CommercialScenario() {
             </div>
             
             <div className="flex flex-col items-center gap-2">
-              <p className="font-semibold text-sm">Supporting Clients Australia Wide</p>
+              <p className="font-semibold text-sm text-primary-foreground">Supporting Clients Australia Wide</p>
               <div className="flex gap-3">
                 <a href="/contact">
                   <Button 
