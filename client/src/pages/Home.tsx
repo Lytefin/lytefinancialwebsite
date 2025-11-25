@@ -313,7 +313,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0" />
-                  <a href="mailto:admin@lytefinancial.com.au" className="hover:underline">admin@lytefinancial.com.au</a>
+                  <a href="mailto:info@lytefinancial.com.au" className="hover:underline">info@lytefinancial.com.au</a>
                 </div>
               </div>
 

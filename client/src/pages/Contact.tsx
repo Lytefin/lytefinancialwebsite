@@ -102,11 +102,11 @@ export default function Contact() {
                   <div>
                     <p className="text-primary font-semibold mb-1">Email:</p>
                     <a 
-                      href="mailto:admin@lytefinancial.com.au" 
+                      href="mailto:info@lytefinancial.com.au" 
                       className="text-foreground hover:text-primary transition-colors"
                       data-testid="link-email"
                     >
-                      admin@lytefinancial.com.au
+                      info@lytefinancial.com.au
                     </a>
                   </div>
                 </div>

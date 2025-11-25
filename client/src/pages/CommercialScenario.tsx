@@ -339,7 +339,7 @@ export default function CommercialScenario() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span>admin@lytefinancial.com.au</span>
+                  <span>info@lytefinancial.com.au</span>
                 </div>
               </div>
               
