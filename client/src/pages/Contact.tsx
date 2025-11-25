@@ -73,44 +73,48 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl text-primary mb-8">
-                Contact Us
-              </h2>
-
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
+                    <p className="text-primary font-semibold mb-1">Address</p>
                     <p className="text-foreground">526/368 Sussex St.</p>
                     <p className="text-foreground">Sydney, NSW 2000</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a 
-                    href="tel:0290993613" 
-                    className="text-foreground hover:text-primary transition-colors"
-                    data-testid="link-phone"
-                  >
-                    (02) 9099 3613
-                  </a>
+                <div className="flex items-start gap-4">
+                  <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="text-primary font-semibold mb-1">Telephone</p>
+                    <a 
+                      href="tel:0290993613" 
+                      className="text-foreground hover:text-primary transition-colors"
+                      data-testid="link-phone"
+                    >
+                      (02) 9099 3613
+                    </a>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a 
-                    href="mailto:admin@lytefinancial.com.au" 
-                    className="text-foreground hover:text-primary transition-colors"
-                    data-testid="link-email"
-                  >
-                    admin@lytefinancial.com.au
-                  </a>
+                <div className="flex items-start gap-4">
+                  <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="text-primary font-semibold mb-1">Email</p>
+                    <a 
+                      href="mailto:admin@lytefinancial.com.au" 
+                      className="text-foreground hover:text-primary transition-colors"
+                      data-testid="link-email"
+                    >
+                      admin@lytefinancial.com.au
+                    </a>
+                  </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
+                    <p className="text-primary font-semibold mb-1">Office Hours</p>
                     <p className="text-foreground">
                       <span className="font-semibold">Mon - Fri:</span> 8:00 AM - 6:00 PM
                     </p>
