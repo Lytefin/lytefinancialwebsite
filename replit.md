@@ -84,8 +84,18 @@ The backend follows a minimal API server pattern:
 
 **Current Schema:**
 - `users` table with id, username, password fields
-- UUID-based primary keys
+- `contact_inquiries` table for storing contact form submissions with firstName, lastName, phone, email, lendingType, createdAt
+- UUID-based primary keys for users, serial IDs for contact inquiries
 - Prepared for expansion with additional business entities
+
+**Contact Form System:**
+The contact form is implemented as a modal dialog accessible via the Header's "Contact" button. It captures:
+- First Name, Last Name (text inputs)
+- Phone Number (tel input)
+- Email Address (email input)
+- Lending Type (dropdown with 7 options: Business Funding, Residential Funding, Commercial Property Funding, SMSF Funding Residential Property, SMSF Funding Commercial Property, Asset and Equipment Finance, More than one of the above types)
+
+**Note:** Email notifications to admin@lytefinancial.com.au are not yet configured. To enable email sending, set up one of the email integrations (Resend, SendGrid) via Replit's integration system and update the `/api/contact` endpoint in `server/routes.ts` to send emails upon form submission. Currently, submissions are stored in the database and logged to console.
 
 ### External Dependencies
 

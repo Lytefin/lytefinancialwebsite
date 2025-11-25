@@ -7,6 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import ContactDialog from "@/components/ContactDialog";
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
 export default function Header() {
@@ -105,16 +106,17 @@ export default function Header() {
             >
               Book a Meeting
             </a>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-primary-foreground text-primary hover-elevate active-elevate-2 text-lg px-6"
-              data-testid="button-contact"
-            >
-              <a href="/contact">
-                Contact
-              </a>
-            </Button>
+            <ContactDialog 
+              trigger={
+                <Button 
+                  size="lg"
+                  className="bg-primary-foreground text-primary hover-elevate active-elevate-2 text-lg px-6"
+                  data-testid="button-contact"
+                >
+                  Contact
+                </Button>
+              }
+            />
           </nav>
         </div>
       </div>

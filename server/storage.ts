@@ -1,13 +1,13 @@
-import { type User, type InsertUser } from "@shared/schema";
+import { type User, type InsertUser, type ContactInquiry, type InsertContactInquiry, contactInquiries } from "@shared/schema";
 import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { db } from "./db";
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  createContactInquiry(inquiry: InsertContactInquiry): Promise<ContactInquiry>;
+  getContactInquiries(): Promise<ContactInquiry[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -32,6 +32,15 @@ export class MemStorage implements IStorage {
     const user: User = { ...insertUser, id };
     this.users.set(id, user);
     return user;
+  }
+
+  async createContactInquiry(inquiry: InsertContactInquiry): Promise<ContactInquiry> {
+    const [result] = await db.insert(contactInquiries).values(inquiry).returning();
+    return result;
+  }
+
+  async getContactInquiries(): Promise<ContactInquiry[]> {
+    return await db.select().from(contactInquiries);
   }
 }
 
