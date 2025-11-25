@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import teamPhoto from "@assets/team photos_1763878226393.jpg";
+import jarredPhoto from "@assets/Jarred Photo_1764034795125.png";
 
 export default function Team() {
   return (
@@ -17,13 +18,36 @@ export default function Team() {
             </h1>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <img 
-              src={teamPhoto}
-              alt="Lyte Financial Team - Tony Ly and Jarred Aranza"
-              className="w-full h-auto"
-              data-testid="img-team-photo"
-            />
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="bg-card rounded-lg overflow-hidden border border-border" data-testid="card-team-tony">
+              <div className="aspect-[3/4] overflow-hidden">
+                <img 
+                  src={teamPhoto}
+                  alt="Tony Ly - Director"
+                  className="w-full h-full object-cover object-top"
+                  data-testid="img-tony-photo"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h2 className="font-serif text-2xl font-bold text-primary mb-2">Tony Ly</h2>
+                <p className="text-muted-foreground">Director</p>
+              </div>
+            </div>
+
+            <div className="bg-card rounded-lg overflow-hidden border border-border" data-testid="card-team-jarred">
+              <div className="aspect-[3/4] overflow-hidden">
+                <img 
+                  src={jarredPhoto}
+                  alt="Jarred Aranza - Finance Specialist"
+                  className="w-full h-full object-cover object-top"
+                  data-testid="img-jarred-photo"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h2 className="font-serif text-2xl font-bold text-primary mb-2">Jarred Aranza</h2>
+                <p className="text-muted-foreground">Finance Specialist</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
