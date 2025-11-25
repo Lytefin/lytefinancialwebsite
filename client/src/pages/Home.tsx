@@ -294,7 +294,7 @@ export default function Home() {
                 <img 
                   src={logoImage}
                   alt="Lyte Financial"
-                  className="h-[54px] mb-6"
+                  className="h-[70px] mb-6"
                   data-testid="footer-logo"
                 />
               </div>
