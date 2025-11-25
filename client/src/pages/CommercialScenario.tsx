@@ -52,7 +52,7 @@ export default function CommercialScenario() {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row flex-wrap gap-4 justify-center">
             <Button
               onClick={() => setActiveCase("highLVR")}
               className={`text-base md:text-lg px-6 py-6 h-auto transition-all ${
