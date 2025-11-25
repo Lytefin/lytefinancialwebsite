@@ -766,7 +766,7 @@ export default function ResidentialScenario() {
               className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4"
               data-testid="text-process-title"
             >
-              Five-Stage Process Map
+              Six-Stage Process Map
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
               Our structured approach to residential lending
@@ -781,10 +781,10 @@ export default function ResidentialScenario() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
-                    Initial Contact & Needs Analysis
+                    Initial Consultation
                   </h3>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Initial in-depth conversation with the client to understand their specific purchasing goals, current financial position, and concerns regarding market timing and lending requirements.
+                    We begin with a detailed, goal-focused discussion to understand what you want to achieve — whether you're buying, upgrading, refinancing, investing, or restructuring your lending. This session helps us understand your priorities, challenges, and the most suitable direction for the lending strategy ahead.
                   </p>
                 </div>
               </div>
@@ -800,10 +800,10 @@ export default function ResidentialScenario() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
-                    Documentation & Strategy Formulation
+                    Information Collection & Financial Assessment
                   </h3>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Collection of all necessary financial documentation. This step involves calculating borrowing capacity, assessing deposit sources, and identifying eligible government schemes or lending solutions.
+                    You'll receive secure access to your Lyte Financial client portal to complete your fact find and upload key documents. From there, we assess your borrowing capacity, income position, deposit or equity, liabilities, and long-term goals — forming a complete picture of your financial position.
                   </p>
                 </div>
               </div>
@@ -819,10 +819,10 @@ export default function ResidentialScenario() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
-                    Application Finalisation & Policy Check
+                    Strategy & Recommendation Meeting
                   </h3>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Finalisation of the application with adherence to specific lender credit policies. Identification of optimal lender match based on client circumstances and property requirements.
+                    Once our analysis is complete, we meet with you to present a personalised lending strategy. We walk you through tailored options, compare lenders and structures, and explain how each approach supports your objectives. This is a collaborative session designed to give you clarity and confidence before moving forward.
                   </p>
                 </div>
               </div>
@@ -838,10 +838,10 @@ export default function ResidentialScenario() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
-                    Approval & Stakeholder Management
+                    Lending Proposal & Application Submission
                   </h3>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Submission and approval of the application through the lender. Continuous engagement with key stakeholders (lender, valuer, conveyancer) to ensure approval is secured and all conditions are met promptly.
+                    You'll receive a detailed proposal outlining the recommended lender, loan structure, repayments, and projected benefits. Once you're comfortable with the plan, we prepare and submit your application — managing all communication with the lender, valuers, and key parties to ensure everything progresses smoothly.
                   </p>
                 </div>
               </div>
@@ -851,16 +851,35 @@ export default function ResidentialScenario() {
             </div>
 
             <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-5">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 mb-4">
                 <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
                   5
                 </div>
                 <div className="flex-1">
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
-                    Settlement & Completion
+                    Loan Approval, Settlement & Completion
                   </h3>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Processing from approval to settlement. Ensuring all legal and lender documents are correct. Coordinating with solicitors and lenders to meet the settlement date and successfully complete the purchase.
+                    After your loan is approved, we guide you through the final requirements and coordinate with all stakeholders, including the lender and your solicitor. We manage the full settlement process, ensuring your transition into the new loan or property is seamless and stress-free.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center my-2">
+                <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+              </div>
+            </div>
+
+            <div className="bg-card p-6 md:p-8 rounded-lg border border-border" data-testid="card-step-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-primary text-primary-foreground rounded-full h-10 w-10 flex items-center justify-center font-bold flex-shrink-0">
+                  6
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-xl md:text-2xl font-bold text-primary mb-2">
+                    Ongoing Support, Reviews & Strategic Guidance
+                  </h3>
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Our partnership continues well beyond settlement. We provide ongoing reviews, rate check-ins, structure optimisation, equity assessments, and strategic advice to ensure your lending remains competitive and aligned with your goals over time. As your life, income, or plans evolve — we ensure your finance evolves with you.
                   </p>
                 </div>
               </div>
