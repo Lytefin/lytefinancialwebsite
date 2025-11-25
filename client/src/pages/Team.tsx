@@ -53,7 +53,7 @@ export default function Team() {
                   src={jarredPhoto}
                   alt="Jarred Aranza - Operations Manager"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center 5%', transform: 'scale(0.9)' }}
+                  style={{ objectPosition: 'center 15%' }}
                   data-testid="img-jarred-photo"
                 />
               </div>
