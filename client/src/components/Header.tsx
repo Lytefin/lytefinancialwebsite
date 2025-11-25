@@ -91,13 +91,77 @@ export default function Header() {
             >
               Meet our Team
             </a>
-            <a 
-              href="/calculator" 
-              className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
-              data-testid="link-calculator"
-            >
-              Tools and Calculators
-            </a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className="bg-transparent text-primary-foreground text-lg hover-elevate active-elevate-2 px-5 py-3 font-semibold data-[state=open]:bg-transparent"
+                    data-testid="dropdown-calculators"
+                  >
+                    Tools and Calculators
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="flex flex-col w-[280px] gap-1 p-2">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/calculators/borrowing-power"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-borrowing-power-calculator"
+                          >
+                            <div className="text-sm font-semibold leading-none">Borrowing Power Calculator</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/calculators/loan-repayment"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-loan-repayment-calculator"
+                          >
+                            <div className="text-sm font-semibold leading-none">Loan Repayment Calculator</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/calculators/offset"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-offset-calculator"
+                          >
+                            <div className="text-sm font-semibold leading-none">Home Loan Offset Calculator</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/calculators/refinancing"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-refinancing-calculator"
+                          >
+                            <div className="text-sm font-semibold leading-none">Refinancing Calculator</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/calculators/stamp-duty"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-stamp-duty-calculator"
+                          >
+                            <div className="text-sm font-semibold leading-none">Stamp Duty Calculator</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <a 
               href="#booking" 
               className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
