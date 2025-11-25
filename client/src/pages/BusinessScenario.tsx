@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Target, Lightbulb, ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/Engineering_workshop_manufacturing_facility_c59a6e79.png";
+import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 
 export default function BusinessScenario() {
   return (
@@ -69,9 +70,14 @@ export default function BusinessScenario() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background">
-        <div className="max-w-5xl mx-auto px-6 md:px-12">
-          <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${constructionImage})` }}
+        />
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12">
+          <div className="bg-card/95 p-8 md:p-12 rounded-lg border border-border backdrop-blur-sm">
             <div className="flex items-start gap-6 mb-6">
               <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
                 <Lightbulb className="h-8 w-8 text-primary" />
