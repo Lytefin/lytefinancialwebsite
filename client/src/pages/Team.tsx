@@ -118,7 +118,7 @@ export default function Team() {
                   <p className="text-primary/80 font-medium">Operations Manager</p>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Jarred ensures every application moves smoothly from consultation to settlement. With exceptional attention to detail, he manages documentation, lender communications, and compliance requirements. His commitment to service excellence delivers a seamless client experience at every stage. He prides himself on being proactive, approachable, and keeping clients informed throughout the process.
+                  Jarred ensures every application moves smoothly from consultation to settlement. With exceptional attention to detail, he manages documentation, lender communications, and compliance requirements. His commitment to service excellence delivers a seamless client experience at every stage. He prides himself on being proactive, approachable, and keeping clients informed throughout.
                 </p>
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-2 text-sm">
