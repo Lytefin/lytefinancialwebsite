@@ -162,13 +162,35 @@ export default function Header() {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <a 
-              href="#booking" 
-              className="text-lg hover-elevate active-elevate-2 px-5 py-3 rounded-md transition-colors font-semibold"
-              data-testid="link-booking"
-            >
-              Book a Meeting
-            </a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className="bg-transparent text-primary-foreground text-lg hover-elevate active-elevate-2 px-5 py-3 font-semibold data-[state=open]:bg-transparent"
+                    data-testid="dropdown-booking"
+                  >
+                    Book A Meeting
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="flex flex-col w-[280px] gap-1 p-2">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="https://calendly.com/tony-lytefinancial/30min?month=2025-11"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            data-testid="link-book-tony"
+                          >
+                            <div className="text-sm font-semibold leading-none">Book a meeting with Tony</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <a href="/contact">
               <Button 
                 size="lg"
