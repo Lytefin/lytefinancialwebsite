@@ -84,7 +84,7 @@ export default function Team() {
                   <p className="text-primary/80 font-medium">Advisory Chairman</p>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Mathew brings over 25 years of senior leadership in banking and finance. Having held executive positions at major financial institutions, he provides strategic guidance and deep industry insight. His expertise in lending markets and institutional relationships strengthens Lyte Financial's sophisticated solutions.
+                  Mathew brings over 17 years of senior leadership in banking and finance. Having held executive positions at major financial institutions, he provides strategic guidance and deep industry insight. His expertise in lending markets and institutional relationships strengthens Lyte Financial's sophisticated solutions.
                 </p>
               </div>
             </div>
