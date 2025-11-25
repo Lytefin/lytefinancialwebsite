@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { Target, Lightbulb, ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Target, Lightbulb, TrendingUp, ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
@@ -135,6 +135,50 @@ export default function BusinessScenario() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-accent">
+        <div className="max-w-5xl mx-auto px-6 md:px-12">
+          <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
+            <div className="flex items-start gap-6 mb-6">
+              <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                <TrendingUp className="h-8 w-8 text-primary" />
+              </div>
+              <div>
+                <h2 
+                  className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6"
+                  data-testid="text-outcome-title"
+                >
+                  The Positive Outcome
+                </h2>
+              </div>
+            </div>
+            
+            <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+              <p className="font-medium text-primary" data-testid="text-outcome-intro">
+                A comprehensive strategy that allowed the client to confidently step into business ownership:
+              </p>
+              
+              <ul className="space-y-4 pl-6">
+                <li data-testid="text-outcome-1">
+                  <span className="font-semibold text-primary">Successful Business Acquisition:</span> The client secured full funding for the purchase of the engineering workshop, allowing him to transition from salaried employment into ownership with confidence.
+                </li>
+                <li data-testid="text-outcome-2">
+                  <span className="font-semibold text-primary">Strong Lender Support Despite No Prior Ownership Experience:</span> By demonstrating the transferability of his senior management expertise, we obtained lender approval even though this was his first business purchase—a common barrier for many corporate professionals entering self-employment.
+                </li>
+                <li data-testid="text-outcome-3">
+                  <span className="font-semibold text-primary">Balanced, Low-Risk Funding Structure:</span> The blended funding strategy—utilising property equity, personal cash contribution, and a charge over business assets—reduced financial pressure and ensured the loan structure matched the stability of the business.
+                </li>
+                <li data-testid="text-outcome-4">
+                  <span className="font-semibold text-primary">A Seamless Transition Into Ownership:</span> Because the workshop was already operating under management with established staff, systems, and contracts, the client was able to step into the director role smoothly and begin overseeing operations without disrupting the business.
+                </li>
+                <li data-testid="text-outcome-5">
+                  <span className="font-semibold text-primary">Long-Term Growth Platform:</span> With a stable operation in place, strong cash flow, and manageable gearing, the client is now well-positioned to drive future expansion, enhance profitability, and build long-term wealth through business ownership.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
