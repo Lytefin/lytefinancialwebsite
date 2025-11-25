@@ -1,14 +1,16 @@
+import { useState } from "react";
 import Header from "@/components/Header";
-import { Target, Lightbulb, ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Target, Lightbulb, TrendingUp, AlertTriangle, ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useLocation } from "wouter";
 import heroImage from "@assets/image_1764036161490.png";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
+type CaseStudyType = "bridging";
+
 export default function ResidentialScenario() {
-  const [, setLocation] = useLocation();
-  
+  const [activeCase, setActiveCase] = useState<CaseStudyType>("bridging");
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -29,95 +31,244 @@ export default function ResidentialScenario() {
               style={{ textShadow: 'none' }}
               data-testid="text-hero-title"
             >
-              Purchasing a New Property While Holding Your Existing Home
+              Residential Lending Case Studies
             </h1>
             <p 
               className="text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto text-white"
               data-testid="text-hero-description"
             >
-              Real-world example of how we helped clients purchase their dream home without the stress of selling first
+              Real-world examples of how we help clients navigate complex residential lending scenarios with strategic solutions tailored to their unique circumstances.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-accent">
-        <div className="max-w-5xl mx-auto px-6 md:px-12">
-          <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
-            <div className="flex items-start gap-6 mb-6">
-              <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
-                <Target className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <h2 
-                  className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6"
-                  data-testid="text-challenge-title"
-                >
-                  The Challenge
-                </h2>
-              </div>
-            </div>
-            
-            <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
-              <p data-testid="text-challenge-profile">
-                <span className="font-semibold text-primary">Client Profile:</span> A couple looking to purchase a new occupied property.
-              </p>
-              
-              <p data-testid="text-challenge-problem">
-                <span className="font-semibold text-primary">The Problem:</span> They were concerned about being excluded from the market by selling their existing property first and then purchasing a new property. Given the upwardly moving market, they did not want to sell and be stuck renting, potentially missing out on desirable properties.
-              </p>
-            </div>
+      <section className="py-8 md:py-12 bg-background border-b border-border">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-2">
+              Select a Case Study
+            </h2>
+            <p className="text-muted-foreground">
+              Choose a scenario to learn more about our residential lending solutions
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+            <Button
+              onClick={() => setActiveCase("bridging")}
+              className={`text-base md:text-lg px-6 py-6 h-auto transition-all ${
+                activeCase === "bridging"
+                  ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
+                  : "bg-card text-primary border-2 border-primary hover:bg-primary/10"
+              }`}
+              data-testid="button-case-bridging"
+            >
+              Buying Before Selling: A Strategic Bridging Finance Solution
+            </Button>
           </div>
         </div>
       </section>
 
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${constructionImage})` }}
-        />
-        <div className="absolute inset-0 bg-background/90" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12">
-          <div className="bg-card/95 p-8 md:p-12 rounded-lg border border-border backdrop-blur-sm">
-            <div className="flex items-start gap-6 mb-6">
-              <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
-                <Lightbulb className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <h2 
-                  className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6"
-                  data-testid="text-solution-title"
-                >
-                  Our Solution
+      {activeCase === "bridging" && (
+        <>
+          <section className="py-12 md:py-16 bg-accent">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Case Study
+                </span>
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-3">
+                  Purchasing a New Property While Holding Your Existing Home
                 </h2>
-              </div>
-            </div>
-            
-            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
-              <div data-testid="text-solution-strategy">
-                <p className="font-semibold text-primary mb-3">The Strategy:</p>
-                <p className="pl-6">
-                  We assisted the clients in securing a solution that allowed them to hold both properties for a period of six months.
+                <p className="text-muted-foreground text-lg italic max-w-3xl mx-auto">
+                  How we helped clients secure their dream home without the pressure of selling first
                 </p>
               </div>
               
-              <div data-testid="text-solution-mechanism">
-                <p className="font-semibold text-primary mb-3">The Mechanism:</p>
-                <p className="pl-6">
-                  This was achieved via a Bridging Finance Facility. The lender was able to advance the funds for the new purchase based on peak debt and equity levels.
-                </p>
-              </div>
-              
-              <div data-testid="text-solution-outcome">
-                <p className="font-semibold text-primary mb-3">The Outcome:</p>
-                <p className="pl-6">
-                  This solution provided the clients with the flexibility to get into their new home first and sufficient time (up to 6 months) to sell their existing property without market pressure.
-                </p>
+              <div className="bg-card p-8 md:p-12 rounded-lg border border-border mb-8">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <Target className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-goal-title"
+                    >
+                      The Client's Goal & Challenge
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <div>
+                    <p className="font-semibold text-primary mb-2">Client Profile:</p>
+                    <p className="pl-6">
+                      A couple seeking to upgrade into their next owner-occupied home.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-primary mb-2">The Problem:</p>
+                    <p className="pl-6 mb-3">
+                      The clients were concerned about being locked out of the market if they sold first. In a rising property market, selling before buying can create several risks:
+                    </p>
+                    <ul className="pl-12 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Being forced to rent while searching for the right home</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Paying more if prices increase during the gap</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Losing negotiating power on their purchase</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Feeling pressured to buy a property quickly, even if it isn't ideal</span>
+                      </li>
+                    </ul>
+                    <p className="pl-6 mt-4">
+                      They wanted a solution that allowed them to <strong className="text-primary">secure their new home first</strong>, then sell their existing property without urgency.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+          <section className="relative py-16 md:py-24 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${constructionImage})` }}
+            />
+            <div className="absolute inset-0 bg-background/90" />
+            <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12">
+              <div className="bg-card/95 p-8 md:p-12 rounded-lg border border-border backdrop-blur-sm">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <Lightbulb className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-solution-title"
+                    >
+                      Our Strategic Solution
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-8 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <div data-testid="text-solution-step-1">
+                    <p className="font-semibold text-primary mb-3">1. Designing a Dual-Property Holding Strategy</p>
+                    <p className="pl-6">
+                      We worked with the clients to develop a structure that allowed them to hold both properties simultaneously, giving them full flexibility during the transition period.
+                    </p>
+                  </div>
+                  
+                  <div data-testid="text-solution-step-2">
+                    <p className="font-semibold text-primary mb-3">2. Utilising a Bridging Finance Facility</p>
+                    <p className="pl-6 mb-3">
+                      We implemented a bridging finance solution that enabled the lender to fund the new purchase upfront. The lender assessed:
+                    </p>
+                    <ul className="pl-12 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span><strong className="text-primary">Peak Debt:</strong> The temporary combined debt on both properties</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span><strong className="text-primary">End Debt:</strong> The expected loan balance after the sale of the current property</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span><strong className="text-primary">Available Equity:</strong> To support the bridging structure</span>
+                      </li>
+                    </ul>
+                    <p className="pl-6 mt-3">
+                      This ensured the clients had access to the full funds required to secure their new home, without needing to sell their existing home first.
+                    </p>
+                  </div>
+                  
+                  <div data-testid="text-solution-step-3">
+                    <p className="font-semibold text-primary mb-3">3. Structuring the Facility for Client Control</p>
+                    <p className="pl-6 mb-3">
+                      The bridging structure allowed for:
+                    </p>
+                    <ul className="pl-12 space-y-2">
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Interest-only repayments during the bridging period</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Up to <strong className="text-primary">twelve months</strong> to sell the existing home</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>Flexibility to prepare, market, and sell at the best time</span>
+                      </li>
+                      <li className="flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>No pressure-driven decisions or rushed sales</span>
+                      </li>
+                    </ul>
+                    <p className="pl-6 mt-3">
+                      This approach enabled the clients to enter their new home immediately while maintaining financial stability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 md:py-24 bg-accent">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="bg-card p-8 md:p-12 rounded-lg border border-border">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="bg-primary/10 p-4 rounded-full flex-shrink-0">
+                    <TrendingUp className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 
+                      className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6"
+                      data-testid="text-outcome-title"
+                    >
+                      The Positive Outcome
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <p className="font-medium text-primary" data-testid="text-outcome-intro">
+                    A smooth, empowered transition into their new home:
+                  </p>
+                  
+                  <ul className="space-y-4 pl-6">
+                    <li data-testid="text-outcome-1">
+                      <span className="font-semibold text-primary">Successful Purchase of Their New Home:</span> The clients secured their ideal home at the right time, without needing to wait for their existing property to sell.
+                    </li>
+                    <li data-testid="text-outcome-2">
+                      <span className="font-semibold text-primary">No Forced Sale or Renting Period:</span> They avoided temporary accommodation, rushed deadlines, and the risks associated with selling in haste.
+                    </li>
+                    <li data-testid="text-outcome-3">
+                      <span className="font-semibold text-primary">Twelve Months of Flexibility to Sell Strategically:</span> The bridging facility provided a generous window for preparing and listing the existing home, allowing them to sell under favourable market conditions.
+                    </li>
+                    <li data-testid="text-outcome-4">
+                      <span className="font-semibold text-primary">A Stress-Free Transition Between Homes:</span> With the new home settled and a clear pathway to selling the existing property, the clients experienced a seamless changeover tailored to their needs.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div 
@@ -308,7 +459,7 @@ export default function ResidentialScenario() {
                 >
                   <Button 
                     className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-                    data-testid="button-book-meeting"
+                    data-testid="button-book-meeting-footer"
                   >
                     Book A Meeting
                   </Button>
