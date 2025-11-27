@@ -109,29 +109,14 @@ export default function Home() {
             >
               A funding solution for everything.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={() => setLocation('/contact')}
-                className="bg-accent text-primary hover:bg-accent/90 font-semibold px-8"
-                size="lg"
-                data-testid="button-speak-expert"
-              >
-                Speak to a Leading Lending Expert Today
-              </Button>
-              <a 
-                href="https://calendly.com/tony-lytefinancial/30min?month=2025-11" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Button 
-                  className="bg-accent text-primary hover:bg-accent/90 font-semibold px-8"
-                  size="lg"
-                  data-testid="button-book-meeting-hero"
-                >
-                  Book A Meeting
-                </Button>
-              </a>
-            </div>
+            <Button 
+              onClick={() => setLocation('/contact')}
+              className="bg-accent text-primary hover:bg-accent/90 font-semibold px-8"
+              size="lg"
+              data-testid="button-speak-expert"
+            >
+              Speak to a Leading Lending Expert Today
+            </Button>
           </div>
         </div>
       </section>
