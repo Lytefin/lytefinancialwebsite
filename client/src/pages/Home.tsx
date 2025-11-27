@@ -384,6 +384,21 @@ export default function Home() {
                 <a href="/contact" className="hover:underline">Contact Us</a>
               </nav>
             </div>
+
+            <div className="border-t border-primary-foreground/20 pt-6 mt-6">
+              <p className="text-xs text-primary-foreground/80 leading-relaxed" data-testid="text-footer-disclaimer">
+                The information on this website is provided for general information and illustrative purposes only. Although we take care to ensure the accuracy of the content, it should not be relied upon as personal or financial advice. You should undertake your own research or seek professional guidance to confirm the relevance of any information to your individual circumstances. All lending is subject to lender terms, conditions, fees, charges, and standard credit criteria. Interest rates and product features may change without notice.
+              </p>
+              <p className="text-xs text-primary-foreground/80 leading-relaxed mt-3">
+                Your broker may provide an indication of lender approval timeframes and highlight options that could offer faster processing; however, these timeframes can vary based on the complexity of your application and how quickly required documents are supplied. In some situations, brokerage fees may apply—your broker will advise you if this is the case.
+              </p>
+              <p className="text-xs text-primary-foreground/80 leading-relaxed mt-3">
+                Not all lenders are available through all brokers. Details of the lenders accessible to your broker are outlined in the Credit Guide provided when credit assistance is offered and are also available upon request.
+              </p>
+              <p className="text-xs text-primary-foreground/80 leading-relaxed mt-3">
+                Your broker will generally communicate with you via email, along with other methods as needed. You may opt out of ongoing communications at any time.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
