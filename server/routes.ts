@@ -23,9 +23,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Send email notification
       if (process.env.RESEND_API_KEY) {
         try {
-          await resend.emails.send({
+          console.log("Attempting to send email via Resend...");
+          const emailResult = await resend.emails.send({
             from: "Lyte Financial <noreply@lytefinancial.com.au>",
-            to: "info@lytefinancial.com.au",
+            to: "tony@lytefinancial.com.au",
             subject: `New Contact Inquiry from ${inquiry.name}`,
             html: `
               <h2>New Contact Form Submission</h2>
@@ -38,7 +39,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
               <p><small>Submitted on: ${new Date().toLocaleString("en-AU", { timeZone: "Australia/Sydney" })}</small></p>
             `,
           });
-          console.log("Email notification sent successfully");
+          console.log("Resend API response:", JSON.stringify(emailResult, null, 2));
+          if (emailResult.error) {
+            console.error("Resend error:", emailResult.error);
+          } else {
+            console.log("Email sent successfully, ID:", emailResult.data?.id);
+          }
         } catch (emailError) {
           console.error("Failed to send email notification:", emailError);
         }
