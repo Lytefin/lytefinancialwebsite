@@ -124,8 +124,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <Button 
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
+                  className="bg-white text-primary hover:bg-white/90 font-semibold px-8"
                   size="lg"
                   data-testid="button-book-meeting-hero"
                 >
