@@ -82,36 +82,57 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="relative h-[44vh] min-h-[330px] flex items-start justify-start overflow-hidden">
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-start overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
           data-testid="img-hero-background"
         />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-primary/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-accent/30 to-transparent" />
         
-        <div className="relative z-10 w-full px-6 md:px-12 pt-16 md:pt-24">
-          <div className="max-w-2xl text-primary-foreground">
+        <div className="relative z-10 w-full px-6 md:px-12">
+          <div className="max-w-3xl text-primary-foreground">
+            <div className="inline-block bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+              <span className="text-accent text-sm font-semibold tracking-wide">TRUSTED LENDING EXPERTS</span>
+            </div>
             <h1 
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight whitespace-nowrap"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
               data-testid="text-hero-title"
             >
               Simplifying the Complex
             </h1>
             <p 
-              className="text-xl md:text-2xl font-medium tracking-wide mb-8"
+              className="text-xl md:text-2xl font-medium tracking-wide mb-8 text-primary-foreground/90"
               data-testid="text-hero-tagline"
             >
               A funding solution for everything.
             </p>
-            <Button 
-              onClick={() => setLocation('/contact')}
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              data-testid="button-speak-expert"
-            >
-              Speak to a Leading Lending Expert Today
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                onClick={() => setLocation('/contact')}
+                className="bg-accent text-primary hover:bg-accent/90 font-semibold px-8"
+                size="lg"
+                data-testid="button-speak-expert"
+              >
+                Speak to a Leading Lending Expert Today
+              </Button>
+              <a 
+                href="https://calendly.com/tony-lytefinancial/30min?month=2025-11" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  variant="outline"
+                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
+                  size="lg"
+                  data-testid="button-book-meeting-hero"
+                >
+                  Book A Meeting
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
