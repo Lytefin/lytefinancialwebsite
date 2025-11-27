@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
 import { FileText, ListChecks, Home } from "lucide-react";
+import smsfBanner from "@assets/stock_images/retirement_planning__a2c10d4c.jpg";
 
 export default function SMSFLending() {
   const [, setLocation] = useLocation();
@@ -10,22 +11,31 @@ export default function SMSFLending() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="py-16 md:py-24 bg-accent">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-16">
+      <section 
+        className="relative py-24 md:py-32 bg-cover bg-center"
+        style={{ backgroundImage: `url(${smsfBanner})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center">
             <h1 
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6"
               data-testid="text-title"
             >
               SMSF Lending
             </h1>
             <p 
-              className="text-primary-foreground text-lg md:text-xl max-w-3xl mx-auto"
+              className="text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto"
               data-testid="text-description"
             >
               Navigate complex SMSF structures to leverage your superannuation for property investment
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-accent">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             <Card 
