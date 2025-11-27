@@ -398,6 +398,9 @@ export default function Home() {
               <p className="text-xs text-primary-foreground/80 leading-relaxed mt-3">
                 Your broker will generally communicate with you via email, along with other methods as needed. You may opt out of ongoing communications at any time.
               </p>
+              <p className="text-xs text-primary-foreground font-bold leading-relaxed mt-4">
+                TLY Finance Group Pty Ltd T/as Lyte Financial is a Credit Representative (557263) of Finsure Finance and Insurance Pty Ltd, Australian Credit Licence (384704).
+              </p>
             </div>
           </div>
         </div>
