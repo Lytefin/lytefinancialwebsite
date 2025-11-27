@@ -25,7 +25,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         try {
           console.log("Attempting to send email via Resend...");
           const emailResult = await resend.emails.send({
-            from: "Lyte Financial <noreply@lytefinancial.com.au>",
+            from: "Lyte Financial <noreply@website.lytefinancial.com.au>",
             to: "tony@lytefinancial.com.au",
             subject: `New Contact Inquiry from ${inquiry.name}`,
             html: `
