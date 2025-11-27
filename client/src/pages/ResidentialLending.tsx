@@ -15,7 +15,7 @@ export default function ResidentialLending() {
         className="relative py-24 md:py-32 bg-cover bg-center"
         style={{ backgroundImage: `url(${residentialBanner})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/50 to-primary/40" />
         <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12">
           <div className="text-center">
             <h1 
