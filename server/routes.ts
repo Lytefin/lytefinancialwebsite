@@ -3,6 +3,9 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactInquirySchema } from "@shared/schema";
 import { fromError } from "zod-validation-error";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -17,7 +20,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const inquiry = await storage.createContactInquiry(validatedData.data);
       
-      // Log the inquiry for now - email integration can be added later
+      // Send email notification
+      if (process.env.RESEND_API_KEY) {
+        try {
+          await resend.emails.send({
+            from: "Lyte Financial Website <onboarding@resend.dev>",
+            to: "info@lytefinancial.com.au",
+            subject: `New Contact Inquiry from ${inquiry.name}`,
+            html: `
+              <h2>New Contact Form Submission</h2>
+              <p><strong>Name:</strong> ${inquiry.name}</p>
+              <p><strong>Email:</strong> ${inquiry.email}</p>
+              <p><strong>Phone:</strong> ${inquiry.phone}</p>
+              <p><strong>Message:</strong></p>
+              <p>${inquiry.message || "No message provided"}</p>
+              <hr>
+              <p><small>Submitted on: ${new Date().toLocaleString("en-AU", { timeZone: "Australia/Sydney" })}</small></p>
+            `,
+          });
+          console.log("Email notification sent successfully");
+        } catch (emailError) {
+          console.error("Failed to send email notification:", emailError);
+        }
+      } else {
+        console.log("RESEND_API_KEY not configured - email not sent");
+      }
+
+      // Log the inquiry
       console.log("New contact inquiry received:", {
         name: inquiry.name,
         email: inquiry.email,
