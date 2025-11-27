@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
 import { FileText, ListChecks } from "lucide-react";
-import residentialBanner from "@assets/stock_images/modern_family_home_e_b74a1654.jpg";
+import residentialBanner from "@assets/stock_images/beautiful_modern_sub_139f79ea.jpg";
 
 export default function ResidentialLending() {
   const [, setLocation] = useLocation();
