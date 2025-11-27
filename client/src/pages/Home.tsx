@@ -18,7 +18,6 @@ import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b1
 import lendingPanel1 from '@assets/LENDING PANEL 1_1764039226168.jpg';
 import lendingPanel2 from '@assets/LENDING PANEL 2_1764039230870.jpg';
 import lendingPanel3 from '@assets/LENDING PANEL 3_1764039235261.jpg';
-import lyteMap from '@assets/LYTE MAP_1763893148700.jpg';
 
 const reviews = [
   {
@@ -285,11 +284,16 @@ export default function Home() {
       </section>
 
       <section className="w-full" data-testid="section-map">
-        <img
-          src={lyteMap}
-          alt="Lyte Financial Location Map"
-          className="w-full h-auto"
-          data-testid="img-location-map"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.7!2d151.2039!3d-33.8751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3f3b312871%3A0x5017d681632cfc0!2s368%20Sussex%20St%2C%20Sydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Lyte Financial Location - 526/368 Sussex St, Sydney NSW 2000"
+          data-testid="iframe-google-map"
         />
       </section>
 
