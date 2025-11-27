@@ -3,7 +3,7 @@ import { Target, Lightbulb, TrendingUp, ArrowRight, MapPin, Phone, Mail, Clock }
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
-import heroImage from "@assets/generated_images/Engineering_workshop_manufacturing_facility_c59a6e79.png";
+import heroImage from "@assets/stock_images/confident_business_o_c5d38aa9.jpg";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
 
 export default function BusinessScenario() {
