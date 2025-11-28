@@ -26,6 +26,7 @@ import LoanRepaymentCalculator from "@/pages/LoanRepaymentCalculator";
 import OffsetCalculator from "@/pages/OffsetCalculator";
 import RefinancingCalculator from "@/pages/RefinancingCalculator";
 import StampDutyCalculator from "@/pages/StampDutyCalculator";
+import InterestOnlyCalculator from "@/pages/InterestOnlyCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -48,6 +49,7 @@ function Router() {
       <Route path="/calculators/offset" component={OffsetCalculator} />
       <Route path="/calculators/refinancing" component={RefinancingCalculator} />
       <Route path="/calculators/stamp-duty" component={StampDutyCalculator} />
+      <Route path="/calculators/interest-only" component={InterestOnlyCalculator} />
       <Route path="/scenarios" component={Scenarios} />
       <Route path="/scenarios/smsf" component={SMSFScenario} />
       <Route path="/scenarios/smsf-residential" component={SMSFResidentialScenario} />
