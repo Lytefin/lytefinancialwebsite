@@ -5,7 +5,7 @@ import { useLocation } from "wouter";
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 import heroImage from "@assets/stock_images/confident_business_o_c5d38aa9.jpg";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
-import meetingImage from '@assets/stock_images/business_people_shak_2ac5bc7e.jpg';
+import meetingImage from '@assets/stock_images/financial_advisor_cl_6bbf5b37.jpg';
 
 export default function BusinessScenario() {
   const [, setLocation] = useLocation();

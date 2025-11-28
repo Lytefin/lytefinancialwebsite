@@ -4,7 +4,7 @@ import { Target, Lightbulb, TrendingUp, MapPin, Phone, Mail, Clock, ArrowRight, 
 import { Button } from "@/components/ui/button";
 import heroImage from "@assets/stock_images/luxury_apartment_bui_0ffde56c.jpg";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
-import meetingImage from '@assets/stock_images/business_people_shak_2ac5bc7e.jpg';
+import meetingImage from '@assets/stock_images/financial_advisor_cl_6bbf5b37.jpg';
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
 export default function SMSFScenario() {
