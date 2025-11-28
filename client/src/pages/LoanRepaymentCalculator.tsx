@@ -21,14 +21,14 @@ export default function LoanRepaymentCalculator() {
           </p>
         </div>
         
-        <div className="w-full max-w-6xl flex justify-center">
+        <div className="w-full max-w-[1400px] flex justify-center px-4">
           <iframe 
             className="VisiCalcClass"
             id="Loan_Repayment_Calculator" 
             src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Loan_Repayment_Calculator/BlueGrey" 
             frameBorder="0" 
             scrolling="no"
-            style={{ width: '100%', minHeight: '1000px' }}
+            style={{ width: '100%', minHeight: '1200px' }}
             title="Loan Repayment Calculator"
             data-testid="iframe-loan-repayment-calculator"
           />
