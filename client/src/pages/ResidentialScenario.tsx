@@ -4,6 +4,7 @@ import { Target, Lightbulb, TrendingUp, ArrowRight, MapPin, Phone, Mail, Clock }
 import { Button } from "@/components/ui/button";
 import heroImage from "@assets/stock_images/beautiful_modern_fam_9d735423.jpg";
 import constructionImage from '@assets/stock_images/construction_site_wo_d72f9b16.jpg';
+import meetingImage from '@assets/stock_images/professional_busines_2ec02d93.jpg';
 import logoImage from "@assets/amended final logo_1763958071951.jpg";
 
 type CaseStudyType = "bridging" | "firsthome" | "debtrecycling";
@@ -891,13 +892,13 @@ export default function ResidentialScenario() {
       <section className="relative py-16 md:py-20 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${constructionImage})` }}
+          style={{ backgroundImage: `url(${meetingImage})` }}
         />
-        <div className="absolute inset-0 bg-background/90" />
+        <div className="absolute inset-0 bg-primary/60" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 text-center">
           <Button 
             onClick={() => window.open('https://calendly.com/tony-lytefinancial/30min?month=2025-11', '_blank')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg md:text-xl px-8 py-6 h-auto"
+            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg md:text-xl px-8 py-6 h-auto font-semibold shadow-lg"
             data-testid="button-book-meeting"
           >
             Book Your Solutions Meeting Here
