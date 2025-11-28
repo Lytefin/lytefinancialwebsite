@@ -8,7 +8,7 @@ export default function OffsetCalculator() {
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
       
-      <div className="flex flex-col items-center py-8 px-4">
+      <div className="flex-1 flex flex-col items-center py-8 px-4">
         <div className="text-center mb-6">
           <h1 
             className="font-serif text-2xl md:text-3xl font-bold text-primary mb-2"
@@ -31,7 +31,7 @@ export default function OffsetCalculator() {
             src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Home_Loan_Offset_Calculator/BlueGrey" 
             frameBorder="0" 
             scrolling="no"
-            style={{ width: '100%', minHeight: '500px' }}
+            style={{ width: '100%', minHeight: '900px' }}
             title="Home Loan Offset Calculator"
             data-testid="iframe-offset-calculator"
           />
