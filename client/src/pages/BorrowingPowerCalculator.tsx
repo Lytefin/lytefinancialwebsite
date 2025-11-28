@@ -21,14 +21,14 @@ export default function BorrowingPowerCalculator() {
           </p>
         </div>
         
-        <div className="w-full max-w-4xl flex justify-center">
+        <div className="w-full max-w-6xl flex justify-center">
           <iframe 
             className="VisiCalcClass"
             id="Borrowing_Power_Calculator" 
             src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Borrowing_Power_Calculator/BlueGrey" 
             frameBorder="0" 
             scrolling="no"
-            style={{ width: '100%', minHeight: '800px' }}
+            style={{ width: '100%', minHeight: '1000px' }}
             title="Borrowing Power Calculator"
             data-testid="iframe-borrowing-power-calculator"
           />

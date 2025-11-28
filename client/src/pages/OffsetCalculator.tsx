@@ -21,14 +21,14 @@ export default function OffsetCalculator() {
           </p>
         </div>
         
-        <div className="w-full max-w-4xl flex justify-center">
+        <div className="w-full max-w-6xl flex justify-center">
           <iframe 
             className="VisiCalcClass"
             id="Home_Loan_Offset_Calculator" 
             src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Home_Loan_Offset_Calculator/BlueGrey" 
             frameBorder="0" 
             scrolling="no"
-            style={{ width: '100%', minHeight: '800px' }}
+            style={{ width: '100%', minHeight: '1000px' }}
             title="Home Loan Offset Calculator"
             data-testid="iframe-offset-calculator"
           />
